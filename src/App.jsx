@@ -1,38 +1,31 @@
-import { Suspense, lazy } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import Spinner from "./components/Spinner";
 
 const RootLazy = lazy(() => import("./pages/Root"));
 
 const AtlantidaInsuranceInicioLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceInicio/AtlantidaInsuranceInicio"
-  )
+  import("./pages/AtlantidaInsuranceInicio/AtlantidaInsuranceInicio")
 );
+
 const AtlantidaInsuranceProductosLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceProductos/AtlantidaInsuranceProductos"
-  )
+  import("./pages/AtlantidaInsuranceProductos/AtlantidaInsuranceProductos")
 );
+
 const AtlantidaInsuranceAboutLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceAbout/AtlantidaInsuranceAbout"
-  )
+  import("./pages/AtlantidaInsuranceAbout/AtlantidaInsuranceAbout")
 );
+
 const AtlantidaInsuranceServiciosLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceServicios/AtlantidaInsuranceServicios"
-  )
+  import("./pages/AtlantidaInsuranceServicios/AtlantidaInsuranceServicios")
 );
+
 const AtlantidaInsuranceRecursosLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceRecursos/AtlantidaInsuranceRecursos"
-  )
+  import("./pages/AtlantidaInsuranceRecursos/AtlantidaInsuranceRecursos")
 );
+
 const AtlantidaInsuranceContactoLazy = lazy(() =>
-  import(
-    "./pages/LayoutEmpresas/AtlantidaInsurance/AtlantidaInsuranceContacto/AtlantidaInsuranceContacto"
-  )
+  import("./pages/AtlantidaInsuranceContacto/AtlantidaInsuranceContacto")
 );
 
 const router = createBrowserRouter([
