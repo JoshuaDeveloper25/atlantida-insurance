@@ -6,11 +6,11 @@ const AtlantidaInsuranceRecursosHeader = () => {
       <div className="container-page flex flex-col lg:flex-row  items-center gap-3">
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="text-4xl sm:text-5xl leading-10 md:mb-8 mb-0">
-            Expertos en <span className="family-nunito-black">proteger</span>{" "}
-            <span className="family-nunito-black sm:block inline">
+            Expertos en <span className="font-[700]">proteger</span>{" "}
+            <span className="font-[700] sm:block inline">
               tu tranquilidad y{" "}
             </span>
-            <span className="family-nunito-black">patrimonio</span>
+            <span className="font-[700]">patrimonio</span>
           </h1>
         </article>
 

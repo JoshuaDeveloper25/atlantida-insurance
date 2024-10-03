@@ -289,3 +289,37 @@ export const valores = [
       "LLevamos a cabo nuestro negocio de manera abierta, justa y honesta.",
   },
 ];
+
+export const preguntasFrecuentes = [
+  {
+    question: "¿Por qué necesito un corredor de seguros?",
+    answer: "Respuesta.",
+    id: 1,
+  },
+
+  {
+    question: "¿Por qué debo tener una póliza de seguro?",
+    answer: "Respuesta.",
+    id: 2,
+  },
+
+  {
+    question:
+      "¿Si ya estoy asegurado como puedo solicitar la asesoría de Atlántida insurance?",
+    answer: "Respuesta.",
+    id: 3,
+  },
+
+  {
+    question: "¿Qué es un copago?",
+    answer: "Respuesta.",
+    id: 4,
+  },
+
+  {
+    question: "¿Qué es un deducible?",
+    answer:
+      "El deducible es un monto que paga el asegurado para acceder a la cobertura del seguro cuando ocurre un siniestro, el monto estará definido en la póliza.",
+    id: 5,
+  },
+];

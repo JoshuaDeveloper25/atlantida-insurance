@@ -1,6 +1,6 @@
 import AtlantidaInsuranceRecursosHeader from "./components/AtlantidaInsuranceRecursosHeader";
 import AtlantidaInsuranceRecursosFAQ from "./components/AtlantidaInsuranceRecursosFAQ";
-import AsistenciaInsurance from "../../components/AsistenciaInsurance";
+import ContactarAsesor from "../../components/ContactarAsesor";
 import subfooter from "../../images/subfooter33.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
@@ -17,12 +17,8 @@ const AtlantidaInsuranceRecursos = () => {
       {/* FAQ */}
       <AtlantidaInsuranceRecursosFAQ />
 
-      {/* Asistencia */}
-      <AsistenciaInsurance
-        title={"¿Aún tienes preguntas?"}
-        titleSpan={"Contacta un asesor"}
-        addClassName={"border-y-0 bg-tertiary-color"}
-      />
+      {/* Contactar Asesor */}
+      <ContactarAsesor />
 
       {/* Subfooter 33 */}
       <SubFooter
