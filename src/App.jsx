@@ -56,6 +56,10 @@ const AtlantidaInsuranceConduceSeguroLazy = lazy(() =>
   )
 );
 
+const AtlantidaInsuranceGastoMedicoLazy = lazy(() =>
+  import("./pages/AtlantidaInsuranceGastoMedico/AtlantidaInsuranceGastoMedico")
+);
+
 const router = createBrowserRouter([
   // --> Normal Pages
   {
@@ -110,6 +114,11 @@ const router = createBrowserRouter([
       {
         path: "/conduce-seguro",
         element: <AtlantidaInsuranceConduceSeguroLazy />,
+      },
+
+      {
+        path: "/gasto-medico",
+        element: <AtlantidaInsuranceGastoMedicoLazy />,
       },
 
       {
