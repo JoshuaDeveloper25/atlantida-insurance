@@ -1,9 +1,7 @@
 import AtlantidaInsuranceServiciosHeader from "./components/AtlantidaInsuranceServiciosHeader";
-import AtlantidaInsuranceServiciosFeatures from "./components/AtlantidaInsuranceServiciosFeatures";
-import AtlantidaInsuranceServiciosSocios from "./components/AtlantidaInsuranceServiciosSocios";
-import AtlantidaInsuranceServiciosSeguro from "./components/AtlantidaInsuranceServiciosSeguro";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
-import MasInformacion from "../../components/MasInformacion";
+import SociosEstrategicos from "../../components/SociosEstrategicos";
+import InfoPrincipal from "../../components/InfoPrincipal";
 import subfooter from "../../images/subfooter32.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
@@ -15,22 +13,26 @@ const AtlantidaInsuranceServicios = () => {
       <AtlantidaInsuranceServiciosHeader />
 
       {/* Banner Rojo */}
-      <RedBanner bannerTitle={`Seguros para empresas y PYMES`} />
+      <RedBanner bannerTitle={`Soluciones para empresas`} />
 
-      {/* Seguro Corporativo */}
-      <AtlantidaInsuranceServiciosSeguro />
-
-      {/* Features Tabs */}
-      <AtlantidaInsuranceServiciosFeatures />
+      {/* Cobertura */}
+      <InfoPrincipal
+        iconClassnames={"w-56 mx-auto"}
+        title={"Cobertura Colectiva de Vida"}
+        description={`Con esta póliza, garantizas un respaldo financiero en caso de fallecimiento, invalidez o enfermedades
+        graves, asegurando el bienestar de tu equipo ante cualquier eventualidad.`}
+        icon={"https://dummyimage.com/600x400/000/fff"}
+      />
 
       {/* Asistencia */}
-      <AsistenciaInsurance title={"Solicita Asistencia Personalizada"} />
+      <AsistenciaInsurance
+        iconClassnames={"w-56 mx-auto"}
+        icon={"https://dummyimage.com/600x400/000/fff"}
+        title={"Solicita Asistencia Personalizada"}
+      />
 
       {/* Socios */}
-      <AtlantidaInsuranceServiciosSocios />
-
-      {/* Más información */}
-      <MasInformacion />
+      <SociosEstrategicos />
 
       {/* Subfooter 32 */}
       <SubFooter

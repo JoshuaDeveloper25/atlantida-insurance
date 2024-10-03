@@ -4,6 +4,7 @@ import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import subfooter from "../../images/subfooterinsurancecontacto.jpg";
 import SubFooter from "../../components/SubFooter";
 import RedBanner from "../../components/RedBanner";
+import ContactarAsesor from "../../components/ContactarAsesor";
 
 const AtlantidaInsuranceContacto = () => {
   return (
@@ -18,9 +19,9 @@ const AtlantidaInsuranceContacto = () => {
       <AtlantidaInsuranceContactoHeader />
 
       {/* Asistencia */}
-      <AsistenciaInsurance
-        title={"Solicita Asistencia Personalizada"}
-        addClassName={"border-y-0 bg-tertiary-color"}
+      <ContactarAsesor
+        text="Solicita Asistencia Personalizada"
+        textSpanned=""
       />
 
       {/* Subfooter 28 */}

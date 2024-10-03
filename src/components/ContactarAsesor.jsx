@@ -1,4 +1,7 @@
-const ContactarAsesor = () => {
+const ContactarAsesor = ({
+  text = "¿Aún tienes preguntas?",
+  textSpanned = "Contacta un asesor",
+}) => {
   return (
     <section className="bg-tertiary-color py-10">
       <div className="container-page my-10">
@@ -13,8 +16,7 @@ const ContactarAsesor = () => {
 
             <div>
               <h2 className="text-4xl mb-2">
-                ¿Aún tienes preguntas?{" "}
-                <span className="block mt-2">Contacta un asesor</span>
+                {text} <span className="block mt-2">{textSpanned}</span>
               </h2>
               <p>Atención 24 horas y 7 días de la semana</p>
             </div>

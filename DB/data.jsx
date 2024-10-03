@@ -207,6 +207,16 @@ export const ciudadResidencia = [
   },
 ];
 
+export const emails = [
+  {
+    tipo: "johndoe@gmail.com",
+  },
+
+  {
+    tipo: "janedoe@gmail.com",
+  },
+];
+
 export const sociosEstrategicos = [
   {
     image: socio1,
@@ -286,7 +296,7 @@ export const valores = [
   {
     title: "Transparencia",
     description:
-      "LLevamos a cabo nuestro negocio de manera abierta, justa y honesta.",
+      "Llevamos a cabo nuestro negocio de manera abierta, justa y honesta.",
   },
 ];
 

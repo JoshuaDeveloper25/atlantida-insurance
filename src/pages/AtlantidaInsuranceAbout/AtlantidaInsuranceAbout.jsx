@@ -31,7 +31,7 @@ const AtlantidaInsuranceAbout = () => {
       {/* Subfooter 31 */}
       <SubFooter
         bgColor={`black`}
-        title={`Tu seguro en manos expertas`}
+        title={`Tu cobertura en manos expertas`}
         img={subfooter}
       />
     </>

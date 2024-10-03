@@ -22,3 +22,12 @@ export const SelectForm = ({ selectProp, defaultValue, options }) => {
     </select>
   );
 };
+
+export const TextareaForm = ({ textareaProp }) => {
+  return (
+    <textarea
+      className="bg-white border h-36 outline-none py-1 px-3 rounded-md w-full"
+      {...textareaProp}
+    ></textarea>
+  );
+};

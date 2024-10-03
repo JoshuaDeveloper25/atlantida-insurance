@@ -6,9 +6,9 @@ const AtlantidaInsuranceContactoHeading = () => {
       <div className="container-page flex flex-col lg:flex-row  items-center gap-3">
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="text-4xl sm:text-5xl leading-10 md:mb-8 mb-0">
-            Juntos <span className="family-nunito-black">aseguramos tu</span>{" "}
+            Juntos <span className="font-[700]">aseguramos tu</span>{" "}
             <span className="sm:block inline">
-              <span className="family-nunito-black">futuro</span> con
+              <span className="font-[700]">futuro</span> con
               tranquilidad
             </span>
           </h1>
