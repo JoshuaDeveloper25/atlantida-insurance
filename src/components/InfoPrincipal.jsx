@@ -1,4 +1,10 @@
-const InfoPrincipal = ({ icon, iconClassnames, title, description }) => {
+const InfoPrincipal = ({
+  icon,
+  iconClassnames,
+  title,
+  description,
+  titleSpan = "",
+}) => {
   return (
     <section className="container-page my-10">
       <div className="flex flex-col sm:flex-row items-center gap-16">
@@ -14,6 +20,7 @@ const InfoPrincipal = ({ icon, iconClassnames, title, description }) => {
         <article className="flex-[27%]">
           <h2 className="font-[700] text-secondary-color text-4xl mb-3">
             {title}
+            <span className="sm:block inline">{titleSpan}</span>
           </h2>
           <p className="text-gray-600">{description}</p>
         </article>
