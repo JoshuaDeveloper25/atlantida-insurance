@@ -11,7 +11,7 @@ const AtlantidaInsuranceInicioCorporativo = () => {
               decoding="async"
               loading="lazy"
               className="w-full rounded-3xl"
-              src={segurosCorporativos}
+              src={'https://dummyimage.com/600x400/000/fff'}
             />
           </article>
 

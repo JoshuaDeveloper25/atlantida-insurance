@@ -19,7 +19,7 @@ const AtlantidaInsuranceRecursosHeader = () => {
             decoding="async"
             loading="lazy"
             className="w-full"
-            src={mujerHeader}
+            src={'https://dummyimage.com/600x400/000/fff'}
             alt={"Imagen del Header"}
           />
         </article>

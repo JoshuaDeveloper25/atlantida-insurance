@@ -1,5 +1,5 @@
 import logoPersonas from "../../../images/seguros-personales-icono.png";
-import segurosPersonales from "../../../images/seguros-personales.jpg";
+// import segurosPersonales from "../../../images/seguros-personales.jpg";
 
 const AtlantidaInsuranceInicioPersonales = () => {
   return (
@@ -9,11 +9,11 @@ const AtlantidaInsuranceInicioPersonales = () => {
           <article className="flex items-center gap-8 text-secondary-color md:py-10 py-2">
             <img decoding="async" loading="lazy" src={logoPersonas} />
             <h2 className="family-nunito-regular leading-[1.2] font-bold lg:text-5xl text-3xl mb-2">
-              Soluciones <span className="block">para Personas</span>
+              Ramos <span className="block">Generales</span>
             </h2>
           </article>
 
-          <article className="max-w-md md:absolute static right-28 -top-16 flex-1 sm:mt-0 mt-2 pt-3">
+          <article className="max-w-md md:absolute static right-28 -top-10 flex-1 sm:mt-0 mt-2 pt-3">
             <img
               decoding="async"
               loading="lazy"

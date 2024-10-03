@@ -333,3 +333,96 @@ export const preguntasFrecuentes = [
     id: 5,
   },
 ];
+
+export const ramosGenerales = [
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Transporte",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Vehículos",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: (
+      <>
+        Maquinaria y equipo <span className="block">móvil</span>{" "}
+      </>
+    ),
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: (
+      <>
+        Cobertura de <span className="block">Responsabilidad Civil o</span>{" "}
+        Profesional por Daños <span className="block">a Terceros</span>
+      </>
+    ),
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: (
+      <>
+        Todo Riesgo de <span className="block">Construcción y</span> Montaje
+      </>
+    ),
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Fianzas/Garantías",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Seguro de Crédito",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Incendio",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Robo",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Rotura de Maquinaria",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Equipo Electrónico",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Lucro Cesante",
+    link: "Conoce más",
+  },
+
+  {
+    image: "https://dummyimage.com/600x400/000/fff",
+    title: "Multi-riesgo",
+    link: "Conoce más",
+  },
+];

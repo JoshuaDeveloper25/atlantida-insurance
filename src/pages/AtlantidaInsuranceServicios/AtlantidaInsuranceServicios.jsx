@@ -38,7 +38,7 @@ const AtlantidaInsuranceServicios = () => {
       <SubFooter
         bgColor={`black`}
         title={`Protección sólida para un futuro seguro`}
-        img={subfooter}
+        img={'https://dummyimage.com/600x400/000/fff'}
       />
     </>
   );
