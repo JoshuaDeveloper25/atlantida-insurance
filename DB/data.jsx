@@ -426,3 +426,39 @@ export const ramosGenerales = [
     link: "Conoce más",
   },
 ];
+
+export const tiposDeUso = [
+  {
+    tipo: "Para el trabajo",
+  },
+
+  {
+    tipo: "Para agendas",
+  },
+
+  {
+    tipo: "Para mandados",
+  },
+
+  {
+    tipo: "Para viajes",
+  },
+];
+
+export const vehiculosDiesel = [
+  {
+    tipo: "BMW",
+  },
+
+  {
+    tipo: "Hyundai Tucson",
+  },
+
+  {
+    tipo: "Mercedes-Benz",
+  },
+
+  {
+    tipo: "Mazda CX-60",
+  },
+];

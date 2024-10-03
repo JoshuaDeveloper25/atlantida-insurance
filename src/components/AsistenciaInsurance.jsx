@@ -1,4 +1,9 @@
-import { ciudadResidencia, tipoCobertura } from "../../DB/data";
+import {
+  ciudadResidencia,
+  tipoCobertura,
+  tiposDeUso,
+  vehiculosDiesel,
+} from "../../DB/data";
 import { InputForm, SelectForm } from "../utils/FormUtilities";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { useState } from "react";
@@ -63,15 +68,27 @@ const AsistenciaInsurance = ({ icon, iconClassnames, versionForm = 1 }) => {
               </div>
 
               <div className="sm:w-auto w-full flex-1">
-                <SelectForm
-                  selectProp={{ name: "ciudadResidencia", required: true }}
-                  defaultValue={"Ciudad de residencia"}
-                  options={ciudadResidencia}
-                />
+                {versionForm === 3 ? (
+                  <InputForm
+                    inputProp={{
+                      name: "ciudadResidencia",
+                      required: true,
+                      type: "text",
+                      placeholder: "Ciudad de residencia",
+                    }}
+                  />
+                ) : (
+                  <SelectForm
+                    selectProp={{ name: "ciudadResidencia", required: true }}
+                    defaultValue={"Ciudad de residencia"}
+                    options={ciudadResidencia}
+                  />
+                )}
               </div>
             </div>
 
-            {versionForm === 1 ? (
+            {/* Version Forms */}
+            {versionForm === 1 && (
               <div className="flex flex-col md:flex-row gap-3">
                 <div className="sm:w-auto w-full flex-1">
                   <SelectForm
@@ -83,7 +100,9 @@ const AsistenciaInsurance = ({ icon, iconClassnames, versionForm = 1 }) => {
 
                 <div className="sm:w-auto w-full flex-1"></div>
               </div>
-            ) : (
+            )}
+
+            {versionForm === 2 && (
               <>
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="sm:w-auto w-full flex-1">
@@ -144,6 +163,43 @@ const AsistenciaInsurance = ({ icon, iconClassnames, versionForm = 1 }) => {
                       </div>
                     </div>
                   </div>
+                </div>
+              </>
+            )}
+
+            {versionForm === 3 && (
+              <>
+                <div className="flex flex-col md:flex-row gap-3">
+                  <div className="sm:w-auto w-full flex-1">
+                    <InputForm
+                      inputProp={{
+                        name: "numeroPlaca",
+                        required: true,
+                        placeholder: "Número de placa",
+                        type: "number",
+                      }}
+                    />
+                  </div>
+
+                  <div className="sm:w-auto w-full flex-1">
+                    <SelectForm
+                      selectProp={{ name: "tiposUso", required: true }}
+                      defaultValue={"Tipos de uso"}
+                      options={tiposDeUso}
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col md:flex-row gap-3">
+                  <div className="sm:w-auto w-full flex-1">
+                    <SelectForm
+                      selectProp={{ name: "vehiculosDiesel", required: true }}
+                      defaultValue={"Vehículos de diésel"}
+                      options={vehiculosDiesel}
+                    />
+                  </div>
+
+                  <div className="sm:w-auto w-full flex-1"></div>
                 </div>
               </>
             )}
