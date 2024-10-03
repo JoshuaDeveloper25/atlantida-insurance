@@ -68,7 +68,7 @@ const MasInformacion = () => {
                   <InputForm
                     inputProp={{
                       required: true,
-                      name: "ciudadResidencia",
+                      name: "numeroTelefono",
                       type: "number",
                       placeholder: "Teléfono",
                     }}

@@ -6,11 +6,11 @@ const AtlantidaInsuranceProductosHeader = () => {
       <div className="container-page flex flex-col lg:flex-row  items-center gap-3">
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="text-4xl sm:text-5xl leading-10 md:mb-8 mb-0">
-            <span className="family-nunito-black">Asegurar tu vida</span>{" "} es
+            <span className="font-[700]">Asegurar tu vida</span>{" "} es
             <span className="sm:block inline">proteger a tu familia y  </span>
             <span>tu patrimonio</span>
           </h1>
-          <button className="button-red-primary mt-3" type="button">Cotiza ahora</button>
+          <button className="btn-normal button-red-primary mt-3" type="button">Cotiza con nosotros</button>
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-4xl">

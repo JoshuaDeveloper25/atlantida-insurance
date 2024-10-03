@@ -1,9 +1,7 @@
-import AtlantidaInsuranceProductosFeatures from "./components/AtlantidaInsuranceProductosFeatures";
 import AtlantidaInsuranceProductosHeader from "./components/AtlantidaInsuranceProductosHeader";
-import AtlantidaInsuranceProductosSocios from "./components/AtlantidaInsuranceProductosSocios";
-import AtlantidaInsuranceProductosSeguro from "./components/AtlantidaInsuranceProductosSeguro";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
-import MasInformacion from "../../components/MasInformacion";
+import SociosEstrategicos from "../../components/SociosEstrategicos";
+import InfoPrincipal from "../../components/InfoPrincipal";
 import subfooter from "../../images/subfooter30.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
@@ -15,27 +13,32 @@ const AtlantidaInsuranceProductos = () => {
       <AtlantidaInsuranceProductosHeader />
 
       {/* Banner Rojo */}
-      <RedBanner bannerTitle={`Seguros individuales y familiares`} />
+      <RedBanner bannerTitle={`Soluciones para personas`} />
 
       {/* Seguro de Vida */}
-      <AtlantidaInsuranceProductosSeguro />
-
-      {/* Features Tabs */}
-      <AtlantidaInsuranceProductosFeatures />
+      <InfoPrincipal
+        iconClassnames={"w-56 mx-auto"}
+        title={"Cobertura de Vida Individual"}
+        description={`Adquirir una póliza de vida garantiza al Asegurado la tranquilidad de darle el respaldo a su familia en
+        caso de fallecimiento por accidente o enfermedad. En Atlántida Insurance te presentamos la póliza que
+        este a la medida de tus necesidades y tu patrimonio`}
+        icon={"https://dummyimage.com/600x400/000/fff"}
+      />
 
       {/* Asistencia */}
-      <AsistenciaInsurance title={"Solicita Asistencia Personalizada"} />
+      <AsistenciaInsurance
+        iconClassnames={"w-56 mx-auto"}
+        icon={"https://dummyimage.com/600x400/000/fff"}
+        title={"Solicita Asistencia Personalizada"}
+      />
 
-      {/* Socios */}
-      <AtlantidaInsuranceProductosSocios />
-
-      {/* Más información */}
-      <MasInformacion />
+      {/* Socios Estratégicos */}
+      <SociosEstrategicos />
 
       {/* Subfooter 30 */}
       <SubFooter
         bgColor={`black`}
-        title={`Tu mejor elección en seguros`}
+        title={`Tu mejor elección en coberturas`}
         img={subfooter}
       />
     </>

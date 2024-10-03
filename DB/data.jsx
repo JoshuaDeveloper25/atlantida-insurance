@@ -1,3 +1,8 @@
+import socio1 from "../src/images/socio1.png";
+import socio2 from "../src/images/socio2.png";
+import socio3 from "../src/images/socio3.png";
+import socio4 from "../src/images/socio4.png";
+
 export const coberturasPersonas = [
   {
     image: "url",
@@ -181,5 +186,75 @@ export const tipoCobertura = [
 
   {
     tipo: "4",
+  },
+];
+
+export const ciudadResidencia = [
+  {
+    tipo: "El Progreso",
+  },
+
+  {
+    tipo: "Tegucigalpa",
+  },
+
+  {
+    tipo: "Comayagua",
+  },
+
+  {
+    tipo: "San Pedro Sula",
+  },
+];
+
+export const sociosEstrategicos = [
+  {
+    image: socio1,
+    url: "#",
+  },
+
+  {
+    image: socio2,
+    url: "#",
+  },
+
+  {
+    image: socio3,
+    url: "#",
+  },
+
+  {
+    image: socio4,
+    url: "#",
+  },
+
+  {
+    image: socio1,
+    url: "#",
+  },
+
+  {
+    image: socio2,
+    url: "#",
+  },
+
+  {
+    image: socio3,
+    url: "#",
+  },
+
+  {
+    image: socio4,
+    url: "#",
+  },
+
+  {
+    image: socio1,
+    url: "#",
+  },
+
+  {
+    image: socio2,
+    url: "#",
   },
 ];
