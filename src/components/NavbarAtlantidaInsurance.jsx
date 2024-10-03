@@ -1,5 +1,4 @@
 import logoAtlantidaInsurance from "../images/nuestraempresa7.png";
-
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { createPortal } from "react-dom";
@@ -23,7 +22,7 @@ const NavbarAtlantidaInsurance = () => {
           </Link>
         </div>
 
-        <div className="hidden lg:flex gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <NavLink
             onClick={() => setNavbarOpen(false)}
             className={({ isActive }) =>
@@ -91,7 +90,7 @@ const NavbarAtlantidaInsurance = () => {
             }
             to={`#`}
           >
-            Softseguros
+            Blog
           </NavLink>
 
           <NavLink
@@ -104,6 +103,14 @@ const NavbarAtlantidaInsurance = () => {
             to={`/contacto`}
           >
             Contacto
+          </NavLink>
+
+          <NavLink
+            onClick={() => setNavbarOpen(false)}
+            className={"btn-normal button-red-primary"}
+            to={`#`}
+          >
+            Mi Seguro
           </NavLink>
         </div>
 
@@ -247,7 +254,7 @@ const NavbarAtlantidaInsurance = () => {
               }
               to={`#`}
             >
-              Softseguros
+              Blog
             </NavLink>
 
             <NavLink
@@ -260,6 +267,14 @@ const NavbarAtlantidaInsurance = () => {
               to={`/contacto`}
             >
               Contacto
+            </NavLink>
+
+            <NavLink
+              onClick={() => setNavbarOpen(false)}
+              className={"btn-normal button-red-primary"}
+              to={`#`}
+            >
+              Mi Seguro
             </NavLink>
           </div>
         </div>

@@ -1,7 +1,7 @@
+import AtlantidaInsuranceInicioCoberturasEmpresas from "./components/AtlantidaInsuranceInicioCoberturasEmpresas";
+import AtlantidaInsuranceInicioCoberturasPersonas from "./components/AtlantidaInsuranceInicioCoberturasPersonas";
 import AtlantidaInsuranceInicioCorporativo from "./components/AtlantidaInsuranceInicioCorporativo";
 import AtlantidaInsuranceInicioPersonales from "./components/AtlantidaInsuranceInicioPersonales";
-import AtlantidaInsuranceInicioSeguros1 from "./components/AtlantidaInsuranceInicioSeguros1";
-import AtlantidaInsuranceInicioSeguros2 from "./components/AtlantidaInsuranceInicioSeguros2";
 import AtlantidaInsuranceInicioClientes from "./components/AtlantidaInsuranceInicioClientes";
 import AtlantidaInsuranceInicioHeader from "./components/AtlantidaInsuranceInicioHeader";
 import MasInformacion from "../../components/MasInformacion";
@@ -16,19 +16,19 @@ const AtlantidaInsuranceInicio = () => {
       <AtlantidaInsuranceInicioHeader />
 
       {/* Banner Rojo */}
-      <RedBanner bannerTitle={`Con más de 15 años de experiencia`} />
+      <RedBanner bannerTitle={`Seguros para la vida, confianza para siempre.`} />
 
       {/* Personales */}
       <AtlantidaInsuranceInicioPersonales />
 
-      {/* Seguros 1 */}
-      <AtlantidaInsuranceInicioSeguros1 />
+      {/* Coberturas */}
+      <AtlantidaInsuranceInicioCoberturasPersonas />
 
-      {/* Corporativo */}
+      {/* Soluciones para empresas */}
       <AtlantidaInsuranceInicioCorporativo />
 
-      {/* Seguros 2 */}
-      <AtlantidaInsuranceInicioSeguros2 />
+      {/* Empresas */}
+      <AtlantidaInsuranceInicioCoberturasEmpresas />
 
       {/* Clientes */}
       <AtlantidaInsuranceInicioClientes />
@@ -42,7 +42,6 @@ const AtlantidaInsuranceInicio = () => {
         title={`Juntos lo hacemos posible`}
         img={subfooter}
       />
-
     </>
   );
 };

@@ -65,113 +65,34 @@ body {
     @apply duration-200 transition-all ease-in-out;
   }
 
+  /* Button Classes */
+  .btn-big-label {
+    @apply p-[32px];
+  }
+
+  .btn-big {
+    @apply py-[12px] w-[192px];
+  }
+
+  .btn-normal {
+    @apply py-[8px] px-[16px];
+  }
+
   .button-red-primary {
-    @apply text-white font-light rounded-sm text-center bg-[#E21E31] py-1 px-10 inline-block animation-fade hover:bg-[#E21E31]/60;
+    @apply text-white font-light rounded-md text-center bg-[#E21E31] inline-block animation-fade hover:bg-[#E21E31]/60;
   }
 
   .button-red-primary-outline {
-    @apply text-[#E21E31] font-light rounded-sm text-center border-[#E21E31] border py-1 px-10 inline-block animation-fade hover:bg-[#E21E31] hover:text-white;
+    @apply text-[#E21E31] font-light rounded-md text-center border-[#E21E31] border inline-block animation-fade hover:bg-[#E21E31] hover:text-white;
   }
 
   .button-red-primary-outline2 {
-    @apply text-white font-light rounded-sm text-center border-white border py-1 px-10 inline-block animation-fade hover:bg-white hover:text-black;
-  }
-}
-
-/* Carousel Nuestras Empresas - Inicio */
-.nuestrasEmpresas > .slick-slider > .slick-prev:before,
-.nuestrasEmpresas > .slick-slider > .slick-next:before {
-  color: #e21e31 !important;
-}
-
-.nuestrasEmpresas > .slick-slider > .slick-prev {
-  left: 1rem;
-  z-index: 999;
-}
-
-.nuestrasEmpresas > .slick-slider > .slick-next {
-  right: 1rem;
-}
-
-/* 500px */
-@media (min-width: 31.25em) {
-  .nuestrasEmpresas > .slick-slider > .slick-prev {
-    left: -0.5rem;
-    z-index: 9999;
+    @apply text-white font-light rounded-md text-center border-white border inline-block animation-fade hover:bg-white hover:text-black;
   }
 
-  .nuestrasEmpresas > .slick-slider > .slick-next {
-    right: -0.5rem;
+  .btn-disabled {
+    @apply text-white animate-pulse pointer-events-none font-light rounded-md text-center bg-[#b3b3b3] inline-block animation-fade;
   }
-}
-
-/* Carousel Empresial Estilos - Componente Global */
-.carouselEmpresarial
-  > .slick-slider
-  > .slick-list
-  > .slick-track
-  > .slick-slide
-  > div {
-  margin: 0 auto !important;
-  max-width: 15rem !important;
-}
-
-.carouselEmpresarial > .slick-slider > .slick-prev {
-  left: 0.3rem;
-  z-index: 9999;
-}
-
-.carouselEmpresarial > .slick-slider > .slick-next {
-  right: 0.3rem;
-}
-
-/* 1200px */
-@media (min-width: 75em) {
-  .carouselEmpresarial > .slick-slider > .slick-prev {
-    left: -0.7rem;
-    z-index: 9999;
-  }
-
-  .carouselEmpresarial > .slick-slider > .slick-next {
-    right: -0.7rem;
-  }
-}
-
-.carouselEmpresarial
-  > .slick-slider
-  > .slick-list
-  > .slick-track
-  > .slick-slide {
-  padding: 0 1rem;
-}
-
-.carouselEmpresarial > .slick-slider > .slick-prev:before,
-.carouselEmpresarial > .slick-slider > .slick-next:before {
-  color: white !important;
-}
-
-/* Carousel de Quienes Somos - Emisor oficial de la moneda de Honduras */
-.carousel-emisor > article > .slick-slider > .slick-prev:before,
-.carousel-emisor > article > .slick-slider > .slick-next:before {
-  color: black !important;
-  font-size: 1.4rem;
-}
-
-.center .slick-center .emisorOficialImg {
-  opacity: 1;
-  transform: scale(1.08);
-  transition: all 400ms ease-in-out;
-  outline: none;
-}
-
-.carousel-emisor > article > .slick-slider > .slick-prev {
-  left: 1rem;
-  z-index: 9999;
-}
-
-.carousel-emisor > article > .slick-slider > .slick-next {
-  right: 1rem;
-  z-index: 9999;
 }
 
 .family-nunito-black {
@@ -186,64 +107,51 @@ body {
   font-family: "Nunito Sans Regular";
 }
 
-/* Codigo de la flip card de la pagina Casa Valores Inicio */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-back {
-  transform: rotateY(180deg);
-}
-
-/* Carousel Atlantida Insurance Inicio */
+/* Carousel de Experiencia de Clientes */
 .clientesAsegurados > .slick-slider > .slick-prev:before,
 .clientesAsegurados > .slick-slider > .slick-next:before {
   color: #e21e31 !important;
 }
 
+.clientesAsegurados .slick-dots li {
+  background: transparent !important;
+  transition: all 0.4s ease-in-out;
+  border-radius: 1rem !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.clientesAsegurados .slick-dots li button {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.clientesAsegurados .slick-dots .slick-active {
+  background: #d7282f !important;
+}
+
+.clientesAsegurados .slick-dots li button:before {
+  color: transparent !important;
+  border: 1px solid #d7282f;
+  border-radius: 100%;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.clientesAsegurados .slick-dots li.slick-active button:before {
+  color: transparent !important;
+}
+
 .clientesAsegurados > .slick-slider > .slick-prev {
-  left: 6rem;
+  left: -1rem;
   top: 3rem;
   z-index: 9999;
 }
 
 .clientesAsegurados > .slick-slider > .slick-next {
-  right: 6rem;
+  right: -1rem;
   top: 3rem;
   z-index: 9999;
-}
-
-/* 950px */
-@media (max-width: 1080px) {
-  .clientesAsegurados > .slick-slider > .slick-prev {
-    left: 0.5rem;
-    z-index: 9999;
-  }
-
-  .clientesAsegurados > .slick-slider > .slick-next {
-    right: 0.5rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .clientesAsegurados > .slick-slider > .slick-prev {
-    left: -0.6rem;
-    z-index: 9999;
-  }
-
-  .clientesAsegurados > .slick-slider > .slick-next {
-    right: -0.6rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .clientesAsegurados > .slick-slider > .slick-prev {
-    top: 6rem;
-  }
-
-  .clientesAsegurados > .slick-slider > .slick-next {
-    top: 6rem;
-  }
 }
 
 /* Estilos a las pestañas de la página de Insurance */
@@ -270,48 +178,4 @@ body {
   .tag-link {
     padding: 0.5rem 1rem;
   }
-}
-
-.object-view-box1 {
-  object-view-box: inset(0% 15% 60% 20%);
-}
-
-.object-view-box2 {
-  object-view-box: inset(0% 30% 40% 20%);
-}
-
-.object-view-box3 {
-  object-view-box: inset(0% 21% 54% 15%);
-}
-
-.object-view-box4 {
-  object-view-box: inset(0% 15% 54% 15%);
-}
-
-.object-view-box5 {
-  object-view-box: inset(0% 22% 56% 20%);
-}
-
-.object-view-box6 {
-  object-view-box: inset(0% 22% 56% 20%);
-}
-
-.object-view-box7 {
-  object-view-box: inset(0% 22% 56% 20%);
-}
-
-.object-view-box8 {
-  object-view-box: inset(0% 15% 55% 10%);
-}
-
-.object-view-box9 {
-  object-view-box: inset(0% 15% 55% 10%);
-}
-
-.object-view-box10 {
-  object-view-box: inset(0% 15% 55% 10%);
-}
-
-.object-view-box11 {
-  object-view-box: inset(0% 40% 15% 5%);
 }
