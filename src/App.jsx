@@ -32,6 +32,12 @@ const AtlantidaInsuranceContactoLazy = lazy(() =>
   import("./pages/AtlantidaInsuranceContacto/AtlantidaInsuranceContacto")
 );
 
+const AtlantidaInsuranceSaludProtegidaLazy = lazy(() =>
+  import(
+    "./pages/AtlantidaInsuranceSaludProtegida/AtlantidaInsuranceSaludProtegida"
+  )
+);
+
 const router = createBrowserRouter([
   // --> Normal Pages
   {
@@ -66,6 +72,11 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <AtlantidaInsuranceBlogLazy />,
+      },
+
+      {
+        path: "/salud-protegida",
+        element: <AtlantidaInsuranceSaludProtegidaLazy />,
       },
 
       {
