@@ -1,10 +1,11 @@
+import { InputForm, SelectForm } from "../utils/FormUtilities";
 import { tipoCobertura } from "../../DB/data";
 
 const MasInformacion = () => {
   return (
     <section className="bg-tertiary-color">
       <div className="container-page py-14">
-        <div className="flex flex-col sm:flex-row items-center gap-5">
+        <div className="flex flex-col sm:flex-row sm:items-center items-stretch gap-5">
           <article className="flex-1 text-center">
             <h2 className="text-secondary-color text-3xl">
               ¿Necesitas más información?
@@ -18,68 +19,76 @@ const MasInformacion = () => {
           <article className="flex-1 text-secondary-color">
             <form className="space-y-3">
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="flex-1">
-                  <input
-                    className="bg-white border w-full rounded-md outline-none py-2 px-3"
-                    type="text"
-                    placeholder="Nombre y Apellido"
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "nombreCompleto",
+                      type: "text",
+                      placeholder: "Nombre y Apellido",
+                    }}
                   />
                 </div>
 
-                <div className="flex-1">
-                  <input
-                    className="bg-white border w-full rounded-md outline-none py-2 px-3"
-                    type="number"
-                    placeholder="Cédula"
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "cedula",
+                      type: "number",
+                      placeholder: "Cédula",
+                    }}
                   />
                 </div>
               </div>
 
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="flex-1">
-                  <input
-                    className="bg-white border w-full rounded-md outline-none py-2 px-3 "
-                    type="text"
-                    placeholder="Ciudad de residencia"
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "ciudadResidencia",
+                      type: "text",
+                      placeholder: "Ciudad de residencia",
+                    }}
                   />
                 </div>
 
-                <div className="flex-1">
-                  <select
-                    className="bg-white border w-full rounded-md outline-none py-2 px-3"
-                    type="text"
-                    placeholder="Email"
-                  >
-                    <option value="">Tipo de cobertura</option>
-                    {tipoCobertura?.map((tipoCobertura, index) => (
-                      <option key={index} value={tipoCobertura?.tipo}>
-                        {tipoCobertura?.tipo}
-                      </option>
-                    ))}
-                  </select>
+                <div className="sm:w-auto w-full flex-1">
+                  <SelectForm
+                    selectProp={{ name: "tipoCobertura", required: true }}
+                    defaultValue={"Tipo de cobertura"}
+                    options={tipoCobertura}
+                  />
                 </div>
               </div>
 
               <div className="flex flex-col md:flex-row gap-3">
-                <div className="flex-1">
-                  <input
-                    className="bg-white border w-full rounded-md outline-none py-2 px-3 "
-                    type="number"
-                    placeholder="Teléfono"
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "ciudadResidencia",
+                      type: "number",
+                      placeholder: "Teléfono",
+                    }}
                   />
                 </div>
 
-                <div className="flex-1">
-                  <input
-                    className="bg-white border w-full rounded-md outline-none py-2 px-3"
-                    type="email"
-                    placeholder="Email"
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "ciudadResidencia",
+                      type: "email",
+                      placeholder: "Email",
+                    }}
                   />
                 </div>
               </div>
 
               <div className="flex flex-col md:flex-row items-center gap-3">
-                <label className="flex-1">
+                <label className="sm:w-auto w-full flex-1">
                   <div className="flex">
                     <input type="checkbox" className="me-2" />
                     <p>
@@ -91,7 +100,7 @@ const MasInformacion = () => {
                   </div>
                 </label>
 
-                <div className="flex-1">
+                <div className="sm:w-auto w-full flex-1">
                   <button
                     type="submit"
                     className="btn-normal button-red-primary w-full"

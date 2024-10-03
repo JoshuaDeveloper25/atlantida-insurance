@@ -98,21 +98,21 @@ const FooterAtlantidaInsurance = () => {
         </div>
 
         <div className="md:hidden rounded-none border border-l-0 border-r-0  mt-6">
-          <h2 className="mb-0" id="headingThree">
+          <h2 className="mb-0" id="comunicacionSoporte">
             <button
               className={`${
-                activeElement === "headingThree" &&
+                activeElement === "comunicacionSoporte" &&
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(0,0,0,0.5)]`
               } group relative flex w-full items-center rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("headingThree")}
+              onClick={() => handleClick("comunicacionSoporte")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
               Comunicación y Soporte
               <span
                 className={`${
-                  activeElement === "headingThree"
+                  activeElement === "comunicacionSoporte"
                     ? `rotate-[-180deg] -mr-1`
                     : `rotate-0`
                 } ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out motion-reduce:transition-none dark:fill-blue-300`}
@@ -136,7 +136,7 @@ const FooterAtlantidaInsurance = () => {
           </h2>
 
           <TECollapse
-            show={activeElement === "headingThree"}
+            show={activeElement === "comunicacionSoporte"}
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
           >
             <div>
@@ -172,21 +172,21 @@ const FooterAtlantidaInsurance = () => {
             </div>
           </TECollapse>
 
-          <h2 className="mb-0" id="headingFour">
+          <h2 className="mb-0" id="direccion">
             <button
               className={`${
-                activeElement === "headingFour" &&
+                activeElement === "direccion" &&
                 ` font-bold [box-shadow:inset_0_-1px_0_rgba(0,0,0,0.5)]`
               } group relative flex w-full items-center rounded-none border-0 px-5 py-4 text-left text-base transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none`}
               type="button"
-              onClick={() => handleClick("headingFour")}
+              onClick={() => handleClick("direccion")}
               aria-expanded="true"
               aria-controls="collapseOne"
             >
               Dirección
               <span
                 className={`${
-                  activeElement === "headingFour"
+                  activeElement === "direccion"
                     ? `rotate-[-180deg] -mr-1`
                     : `rotate-0`
                 } ml-auto h-5 w-5 shrink-0 fill-[#336dec] transition-transform duration-200 ease-in-out motion-reduce:transition-none dark:fill-blue-300`}
@@ -210,7 +210,7 @@ const FooterAtlantidaInsurance = () => {
           </h2>
 
           <TECollapse
-            show={activeElement === "headingFour"}
+            show={activeElement === "direccion"}
             className="!mt-0 !rounded-b-none !shadow-none px-5 py-5 my-5"
           >
             <div>
@@ -239,7 +239,7 @@ const FooterAtlantidaInsurance = () => {
       {/* FOOTER de Todos los derechos reservados */}
       <div className="bg-primary-color text-white py-5">
         <div className="container-page px-2">
-          <div className="flex flex-col sm:flex-row space-y-2 gap-2 items-center justify-between">
+          <div className="flex flex-col md:flex-row space-y-2 gap-2 items-center justify-between">
             <Link className="family-nunito-semibold" to={"#"}>
               Política de Privacidad
             </Link>

@@ -6,7 +6,7 @@ const AtlantidaInsuranceInicioHeader = () => {
       <div className="container-page ">
         <div className="flex flex-col lg:flex-row  items-center gap-3">
           <article className="text-secondary-color lg:py-0 py-8">
-            <h1 className="text-4xl sm:text-5xl leading-10 md:mb-8 mb-0">
+            <h1 className="text-4xl sm:text-5xl leading-10 mb-4">
               <span className="">
                 Asesoramiento{" "}
                 <span className="sm:block inline">
