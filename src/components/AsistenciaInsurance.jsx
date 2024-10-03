@@ -1,7 +1,11 @@
-import { InputForm, SelectForm } from "../utils/FormUtilities";
 import { ciudadResidencia, tipoCobertura } from "../../DB/data";
+import { InputForm, SelectForm } from "../utils/FormUtilities";
+import { FaMinus, FaPlus } from "react-icons/fa";
+import { useState } from "react";
 
-const AsistenciaInsurance = ({ icon, iconClassnames }) => {
+const AsistenciaInsurance = ({ icon, iconClassnames, versionForm = 1 }) => {
+  const [numberValue, setNumberValue] = useState(0);
+
   return (
     <section className="container-page my-14 py-14 border-y border-secondary-color/30 text-secondary-color">
       <div className="flex flex-col sm:flex-row items-center gap-16">
@@ -67,17 +71,82 @@ const AsistenciaInsurance = ({ icon, iconClassnames }) => {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-3">
-              <div className="sm:w-auto w-full flex-1">
-                <SelectForm
-                  selectProp={{ name: "tipoCobertura", required: true }}
-                  defaultValue={"Tipo de cobertura"}
-                  options={tipoCobertura}
-                />
-              </div>
+            {versionForm === 1 ? (
+              <div className="flex flex-col md:flex-row gap-3">
+                <div className="sm:w-auto w-full flex-1">
+                  <SelectForm
+                    selectProp={{ name: "tipoCobertura", required: true }}
+                    defaultValue={"Tipo de cobertura"}
+                    options={tipoCobertura}
+                  />
+                </div>
 
-              <div className="sm:w-auto w-full flex-1"></div>
-            </div>
+                <div className="sm:w-auto w-full flex-1"></div>
+              </div>
+            ) : (
+              <>
+                <div className="flex flex-col md:flex-row gap-3">
+                  <div className="sm:w-auto w-full flex-1">
+                    <InputForm
+                      inputProp={{
+                        name: "fechaSalida",
+                        required: true,
+                        placeholder: "Fecha de salida",
+                        type: "text",
+                      }}
+                    />
+                  </div>
+
+                  <div className="sm:w-auto w-full flex-1">
+                    <InputForm
+                      inputProp={{
+                        name: "fechaRetorno",
+                        required: true,
+                        placeholder: "Fecha de retorno",
+                        type: "text",
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col md:flex-row gap-3">
+                  <div className="sm:w-auto w-full flex-1">
+                    <InputForm
+                      inputProp={{
+                        name: "fechaSalida",
+                        required: true,
+                        placeholder: "País de destino",
+                        type: "text",
+                      }}
+                    />
+                  </div>
+
+                  <div className="sm:w-auto w-full flex-1">
+                    <div className="flex  h-full items-center gap-6">
+                      <h3 className="text-sm">Cantidad de personas</h3>
+
+                      <div className="flex border rounded-md items-center">
+                        <button type="button">
+                          <FaMinus
+                            onClick={() => setNumberValue((prev) => prev - 1)}
+                            className="px-3 bg-primary-color text-white rounded-s-md size-9"
+                          />
+                        </button>
+                        <h4 className="text-sm text-secondary-color px-4">
+                          {numberValue}
+                        </h4>
+                        <button type="button">
+                          <FaPlus
+                            onClick={() => setNumberValue((prev) => prev + 1)}
+                            className="px-3 bg-primary-color text-white rounded-e-md size-9"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
 
             <div className="flex flex-col md:flex-row items-center gap-3">
               <label className="sm:w-auto w-full flex-1">

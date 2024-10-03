@@ -28,7 +28,6 @@ const AtlantidaInsuranceServicios = () => {
       <AsistenciaInsurance
         iconClassnames={"w-56 mx-auto"}
         icon={"https://dummyimage.com/600x400/000/fff"}
-        title={"Solicita Asistencia Personalizada"}
       />
 
       {/* Socios */}
