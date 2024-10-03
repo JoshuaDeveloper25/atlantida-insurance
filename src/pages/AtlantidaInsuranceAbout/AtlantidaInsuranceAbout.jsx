@@ -14,7 +14,7 @@ const AtlantidaInsuranceAbout = () => {
       <AtlantidaInsuranceAboutHeader />
 
       {/* Banner Rojo */}
-      <RedBanner bannerTitle={`Asesoramiento con 15 años de experiencia`} />
+      <RedBanner bannerTitle={`Seguros que cuidan de ti`} />
 
       {/* Broker */}
       <AtlantidaInsuranceAboutBroker />

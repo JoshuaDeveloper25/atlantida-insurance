@@ -5,7 +5,7 @@ import socio4 from "../src/images/socio4.png";
 
 export const coberturasPersonas = [
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura de <span className="block">Vida Individual</span>
@@ -15,7 +15,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura <span className="block">de Salud</span>
@@ -25,7 +25,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura de Salud <span className="block">Internacional</span>
@@ -35,7 +35,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura de <span className="block">Asistencia en Viajes</span>
@@ -45,7 +45,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura de <span className="block">Vehículos</span>
@@ -55,7 +55,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura de Gastos <span className="block">Médicos Mayores</span>
@@ -65,7 +65,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura de <span className="block">Accidentes Personales</span>
@@ -75,7 +75,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: "Otras coberturas",
     link: "Conoce más",
   },
@@ -83,7 +83,7 @@ export const coberturasPersonas = [
 
 export const coberturasEmpresas = [
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura de Salud <span className="block">para PYMES</span> y
@@ -94,7 +94,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura Colectiva <span className="block">de Vida</span>
@@ -104,7 +104,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Cobertura de Gastos <span className="block">Médicos Mayores</span>
@@ -114,7 +114,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Seguros <span className="block">Masivos</span>
@@ -124,7 +124,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Riesgos <span className="block">Especiales</span>
@@ -134,7 +134,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Seguro <span className="block">Agrícola</span>
@@ -144,7 +144,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "url",
+    image: "https://dummyimage.com/600x400/000/fff",
     title: (
       <>
         Ramos <span className="block">Generales</span>
@@ -256,5 +256,36 @@ export const sociosEstrategicos = [
   {
     image: socio2,
     url: "#",
+  },
+];
+
+export const valores = [
+  {
+    title: "Centrado en cliente",
+    description:
+      "Creemos en ofrecer lo mejor con atención precisa para alcanzar los niveles más altos de satisfacción y seguridad del cliente.",
+  },
+
+  {
+    title: "Trabajo en equipo",
+    description:
+      "Nos esforzamos por reunir a personas con diferentes experiencias y conocimientos para brindar servicios impecables y excepcionales.",
+  },
+
+  {
+    title: "Integridad",
+    description: "No hacemos lo que es fácil, hacemos lo correcto.",
+  },
+
+  {
+    title: "Innovación",
+    description:
+      "Nos esforzamos y desafiamos los métodos convencionales de operaciones con un enfoque de ´PODER HACERLO¨",
+  },
+
+  {
+    title: "Transparencia",
+    description:
+      "LLevamos a cabo nuestro negocio de manera abierta, justa y honesta.",
   },
 ];

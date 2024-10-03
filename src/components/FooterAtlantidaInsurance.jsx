@@ -21,7 +21,7 @@ const FooterAtlantidaInsurance = () => {
     <footer className="text-secondary-color">
       <div className="container-page py-8 px-2">
         {/* Footer Desktop */}
-        <div className="md:flex hidden">
+        <div className="lg:flex hidden">
           <div className="flex-1">
             <div className="flex gap-14 items-end">
               <img
@@ -67,7 +67,7 @@ const FooterAtlantidaInsurance = () => {
           </div>
         </div>
 
-        <div className="md:flex hidden flex-col sm:flex-row gap-6 mt-10 sm:pb-0 pb-10 pt-10 border-t border-t-gray-300">
+        <div className="lg:flex hidden flex-col sm:flex-row gap-6 mt-10 sm:pb-0 pb-10 pt-10 border-t border-t-gray-300">
           <div className="flex-1">
             <h3 className="font-[700] text-black mb-6">Quito</h3>
             <p>
@@ -88,7 +88,7 @@ const FooterAtlantidaInsurance = () => {
         </div>
 
         {/* Footer Responsive */}
-        <div className="md:hidden flex">
+        <div className="lg:hidden flex">
           <img
             src={logoAtlantidaInsurance}
             className="w-56 mx-auto"
@@ -97,7 +97,7 @@ const FooterAtlantidaInsurance = () => {
           />
         </div>
 
-        <div className="md:hidden rounded-none border border-l-0 border-r-0  mt-6">
+        <div className="lg:hidden rounded-none border border-l-0 border-r-0  mt-6">
           <h2 className="mb-0" id="comunicacionSoporte">
             <button
               className={`${

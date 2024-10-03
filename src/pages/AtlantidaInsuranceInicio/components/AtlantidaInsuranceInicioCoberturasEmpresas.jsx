@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AtlantidaInsuranceInicioCoberturasEmpresas = () => {
   return (
     <section className="container-page sm:my-24">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 md:gap-10 gap-2">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 lg:place-items-stretch place-items-center md:gap-10 gap-2">
         {coberturasEmpresas?.map((coberturaPersona, id) => (
           <article
             key={id}
@@ -14,6 +14,7 @@ const AtlantidaInsuranceInicioCoberturasEmpresas = () => {
               src={coberturaPersona?.image}
               loading="lazy"
               decoding="async"
+              className="w-56"
             />
 
             <h3 className="family-nunito-regular text-xl py-1">

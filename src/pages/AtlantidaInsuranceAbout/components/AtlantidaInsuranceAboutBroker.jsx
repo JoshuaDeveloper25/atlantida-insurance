@@ -3,13 +3,13 @@ const AtlantidaInsuranceAboutBroker = () => {
     <section className="container-page my-8">
       <div className="flex flex-col sm:flex-row gap-8 items-center">
         <article className="flex-1">
-          <h2 className="family-nunito-black sm:text-5xl text-4xl text-gray-600">
+          <h2 className="family-nunito-semibold sm:text-5xl text-4xl text-secondary-color">
             Tu broker y <span className="md:block inline">asesor de</span> confianza
           </h2>
         </article>
 
         <article className="flex-[45%]">
-          <p className="text-gray-800">
+          <p className="text-secondary-color">
             Socios comerciales de las principales Aseguradoras y Reaseguradores
             a nivel nacional e internacional se convierten en nuestros aliados
             estratégicos para la emisión y suscripción de las pólizas de seguros

@@ -12,7 +12,9 @@ const InfoPrincipal = ({ icon, iconClassnames, title, description }) => {
         </article>
 
         <article className="flex-[27%]">
-          <h2 className="font-[700] text-secondary-color text-4xl mb-3">{title}</h2>
+          <h2 className="font-[700] text-secondary-color text-4xl mb-3">
+            {title}
+          </h2>
           <p className="text-gray-600">{description}</p>
         </article>
       </div>

@@ -10,9 +10,13 @@ const SociosEstrategicos = () => {
         </h2>
       </article>
 
-      <div className="grid md:grid-cols-5 grid-cols-1 gap-8">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-1 gap-8">
         {sociosEstrategicos?.map((socioEstraategico, index) => (
-          <Link key={index} to={socioEstraategico?.url}>
+          <Link
+            key={index}
+            to={socioEstraategico?.url}
+            className="block sm:mx-0 mx-auto"
+          >
             <img
               loading="lazy"
               decoding="async"

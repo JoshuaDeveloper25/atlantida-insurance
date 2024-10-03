@@ -8,7 +8,7 @@ const AtlantidaInsuranceAboutMision = () => {
           <h2 className="text-3xl text-primary-color family-nunito-black mb-4">
             Misión
           </h2>
-          <p>
+          <p className="text-secondary-color max-w-sm">
             Nuestra misión es el compromiso hacia nuestros clientes de asesorar
             y presentar las mejores condiciones en seguros para brindar
             seguridad a su persona, familia y patrimonio.
