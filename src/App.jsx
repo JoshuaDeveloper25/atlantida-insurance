@@ -102,6 +102,12 @@ const AtlantidaInsuranceCultivaLazy = lazy(() =>
   import("./pages/AtlantidaInsuranceCultiva/AtlantidaInsuranceCultiva")
 );
 
+const AtlantidaInsuranceCargaProtegidaLazy = lazy(() =>
+  import(
+    "./pages/AtlantidaInsuranceCargaProtegida/AtlantidaInsuranceCargaProtegida"
+  )
+);
+
 const router = createBrowserRouter([
   // --> Normal Pages
   {
@@ -201,6 +207,11 @@ const router = createBrowserRouter([
       {
         path: "/cultiva",
         element: <AtlantidaInsuranceCultivaLazy />,
+      },
+
+      {
+        path: "/carga-protegida",
+        element: <AtlantidaInsuranceCargaProtegidaLazy />,
       },
 
       {
