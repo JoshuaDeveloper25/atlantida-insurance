@@ -4,6 +4,7 @@ const InfoPrincipal = ({
   title,
   description,
   titleSpan = "",
+  subTitle = "",
 }) => {
   return (
     <section className="container-page my-10">
@@ -22,6 +23,7 @@ const InfoPrincipal = ({
             {title}
             <span className="sm:block inline">{titleSpan}</span>
           </h2>
+          <h3 className="text-secondary-color text-2xl mb-3">{subTitle}</h3>
           <p className="text-gray-600">{description}</p>
         </article>
       </div>
