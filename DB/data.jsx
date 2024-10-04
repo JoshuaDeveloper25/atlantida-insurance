@@ -462,3 +462,39 @@ export const vehiculosDiesel = [
     tipo: "Mazda CX-60",
   },
 ];
+
+export const direcciones = [
+  {
+    tipo: "Honduras, El Progreso",
+  },
+
+  {
+    tipo: "USA, Houston",
+  },
+
+  {
+    tipo: "Nuevo México",
+  },
+
+  {
+    tipo: "España, Madrid",
+  },
+];
+
+export const numerosTelefono = [
+  {
+    tipo: "+52 55 8421 6502",
+  },
+
+  {
+    tipo: "+563 291 0475",
+  },
+
+  {
+    tipo: "+55 2744 620",
+  },
+
+  {
+    tipo: "+800 024 0384 Ext. 2025",
+  },
+];
