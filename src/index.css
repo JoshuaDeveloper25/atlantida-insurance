@@ -110,7 +110,7 @@ body {
 /* Carousel de Experiencia de Clientes */
 .clientesAsegurados > .slick-slider > .slick-prev:before,
 .clientesAsegurados > .slick-slider > .slick-next:before {
-  color: #e21e31 !important;
+  content: none;
 }
 
 .clientesAsegurados .slick-dots li {
@@ -143,14 +143,14 @@ body {
 }
 
 .clientesAsegurados > .slick-slider > .slick-prev {
-  left: -1rem;
-  top: 3rem;
+  left: 0;
+  top: 1rem;
   z-index: 9999;
 }
 
 .clientesAsegurados > .slick-slider > .slick-next {
-  right: -1rem;
-  top: 3rem;
+  right: 0;
+  top: 1rem;
   z-index: 9999;
 }
 

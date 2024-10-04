@@ -67,7 +67,7 @@ const AtlantidaInsuranceRegistrarse = () => {
               <div className="sm:w-auto w-full flex-1">
                 <SelectForm
                   selectProp={{ name: "telefono", required: true }}
-                  defaultValue={"Teléfono*"}
+                  defaultValue={"Teléfono"}
                   options={numerosTelefono}
                 />
               </div>

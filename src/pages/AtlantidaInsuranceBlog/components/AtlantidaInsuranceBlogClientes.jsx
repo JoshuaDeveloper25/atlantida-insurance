@@ -1,5 +1,22 @@
+import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 import { experienciaClientes } from "../../../../DB/data";
 import Slider from "react-slick";
+
+const NextArrow = ({ className, onClick }) => {
+  return (
+    <div className={className} onClick={onClick}>
+      <BiChevronRight className="size-7 bg-primary-color p-1 text-white rounded-full" />
+    </div>
+  );
+};
+
+const PrevArrow = ({ className, onClick }) => {
+  return (
+    <div className={className} onClick={onClick}>
+      <BiChevronLeft className="size-7 bg-primary-color p-1 text-white rounded-full" />
+    </div>
+  );
+};
 
 const AtlantidaInsuranceInicioClientes = () => {
   const settings = {
@@ -9,6 +26,8 @@ const AtlantidaInsuranceInicioClientes = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 768,
@@ -23,7 +42,7 @@ const AtlantidaInsuranceInicioClientes = () => {
 
   return (
     <section className="container-page py-16 mt-8 border-t border-t-secondary-color">
-      <div className="grid md:grid-cols-4 grid-cols-1 gap-10 items-center">
+      <div className="grid lg:grid-cols-4 grid-cols-1 gap-10 items-center">
         <article className="md:col-span-2 col-span-5 text-center md:mb-0 mb-5">
           <h2 className="text-[1.7rem] leading-7 text-secondary-color family-nunito-regular">
             Experiencia de clientes
