@@ -1,10 +1,11 @@
 import AtlantidaInsuranceProteccionCustomHeader from "./components/AtlantidaInsuranceProteccionCustomHeader";
+import subfooter from "../../images/proteccion-personalizada-subfooter.webp";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
+import envelope from "../../images/envelope.png";
 
 const AtlantidaInsuranceProteccionCustom = () => {
   return (
@@ -17,11 +18,11 @@ const AtlantidaInsuranceProteccionCustom = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-20 mx-auto"}
         title={"Cobertura de Salud para PYMES"}
         titleSpan={"y Corporativos"}
         description={`Planes especialmente diseñados para brindar acceso a la mejor atención médica a sus colaboradores.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={envelope}
       />
 
       {/* Asistencia */}
@@ -38,7 +39,7 @@ const AtlantidaInsuranceProteccionCustom = () => {
       <SubFooter
         bgColor={`black`}
         title={`Coberturas que impulsan tu negocio`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );
