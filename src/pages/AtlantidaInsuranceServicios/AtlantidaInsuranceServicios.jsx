@@ -1,8 +1,9 @@
 import AtlantidaInsuranceServiciosHeader from "./components/AtlantidaInsuranceServiciosHeader";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
+import subfooter from "../../images/servicios-subfooter.jpg";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter32.jpg";
+import icon from "../../images/search-luggage.png";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
@@ -17,11 +18,11 @@ const AtlantidaInsuranceServicios = () => {
 
       {/* Cobertura */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-36 mx-auto"}
         title={"Cobertura Colectiva de Vida"}
         description={`Con esta póliza, garantizas un respaldo financiero en caso de fallecimiento, invalidez o enfermedades
         graves, asegurando el bienestar de tu equipo ante cualquier eventualidad.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={icon}
       />
 
       {/* Asistencia */}
@@ -37,7 +38,7 @@ const AtlantidaInsuranceServicios = () => {
       <SubFooter
         bgColor={`black`}
         title={`Protección sólida para un futuro seguro`}
-        img={'https://dummyimage.com/600x400/000/fff'}
+        img={subfooter}
       />
     </>
   );
