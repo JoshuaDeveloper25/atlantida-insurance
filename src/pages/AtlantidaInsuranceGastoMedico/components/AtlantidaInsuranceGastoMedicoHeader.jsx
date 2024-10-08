@@ -1,4 +1,4 @@
-import hombreHeader from "../../../images/insurance-productos.png";
+import headerPrev from "../../../images/gasto-medico-header.png";
 
 const AtlantidaInsuranceGastoMedicoHeader = () => {
   return (
@@ -15,12 +15,12 @@ const AtlantidaInsuranceGastoMedicoHeader = () => {
           </button>
         </article>
 
-        <article className="pt-0 md:pt-5 mx-auto max-w-4xl">
+        <article className="pt-0 md:pt-5 mx-auto max-w-3xl">
           <img
             decoding="async"
             loading="lazy"
             className="w-full"
-            src={"https://dummyimage.com/600x400/000/fff"}
+            src={headerPrev}
             alt={"Imagen del Header"}
           />
         </article>
