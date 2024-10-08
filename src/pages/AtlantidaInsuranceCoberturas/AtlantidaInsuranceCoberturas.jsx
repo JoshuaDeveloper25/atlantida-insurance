@@ -1,8 +1,9 @@
 import AtlantidaInsuranceCoberturasHeader from "./components/AtlantidaInsuranceCoberturasHeader";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
+import subfooter from "../../images/amplitud-coberturas-subfooter.jpg";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
+import icon from "../../images/search-user.png";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
@@ -17,14 +18,14 @@ const AtlantidaInsuranceCoberturas = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Otras coberturas"}
         subTitle={
           "Multirriesgo, agrícola, casco áereo, canal no tradicional, entre otros."
         }
         description={`Contamos con una amplia gama de soluciones de seguros de todos los ramos y con las mejores y
         más reconocidas compañías de seguros.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={icon}
       />
 
       {/* Asistencia */}
@@ -40,7 +41,7 @@ const AtlantidaInsuranceCoberturas = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tu cobertura a medida, tus reglas`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );
