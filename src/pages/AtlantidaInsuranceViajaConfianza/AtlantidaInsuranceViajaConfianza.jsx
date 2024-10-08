@@ -2,7 +2,8 @@ import AtlantidaInsuranceViajaConfianzaHeader from "./components/AtlantidaInsura
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
+import subfooter from "../../images/viaja-confianza-subfooter.webp";
+import plane from "../../images/plane.png";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
@@ -17,20 +18,16 @@ const AtlantidaInsuranceViajaConfianza = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Cobertura de Asistencia en"}
         titleSpan={"Viajes"}
         description={`Cobertura desde emergencias médicas hasta pérdida de equipaje. No permitas que un accidente o
         imprevisto arruine tu viaje planificado.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={plane}
       />
 
       {/* Asistencia */}
-      <AsistenciaInsurance
-        iconClassnames={"w-24 mx-auto"}
-   
-        versionForm={2}
-      />
+      <AsistenciaInsurance iconClassnames={"w-24 mx-auto"} versionForm={2} />
 
       {/* Socios Estratégicos */}
       <SociosEstrategicos />
@@ -39,7 +36,7 @@ const AtlantidaInsuranceViajaConfianza = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tu bienestar, nuestra prioridad`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );
