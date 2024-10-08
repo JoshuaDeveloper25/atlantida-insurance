@@ -1,8 +1,9 @@
 import AtlantidaInsuranceEmpresaPotencialHeader from "./components/AtlantidaInsuranceEmpresaPotencialHeader";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
+import subfooter from "../../images/empresa-potencial-subfooter.jpg";
+import icon from "../../images/building.png";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
@@ -17,17 +18,16 @@ const AtlantidaInsuranceEmpresaPotencial = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Seguros Masivos"}
         description={`Diseños de productos estratégicos con coberturas y primas preferenciales para cooperativas, banca
         seguros, mutualistas e instituciones financieras.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={icon}
       />
 
       {/* Asistencia */}
       <AsistenciaInsurance
         iconClassnames={"w-24 mx-auto"}
-   
         versionForm={1}
       />
 
@@ -38,7 +38,7 @@ const AtlantidaInsuranceEmpresaPotencial = () => {
       <SubFooter
         bgColor={`black`}
         title={`Con nuestros seguros masivos, todos están cubiertos`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );
