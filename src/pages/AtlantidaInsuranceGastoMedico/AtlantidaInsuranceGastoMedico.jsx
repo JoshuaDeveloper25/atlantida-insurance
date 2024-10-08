@@ -27,8 +27,8 @@ const AtlantidaInsuranceGastoMedico = () => {
 
       {/* Asistencia */}
       <AsistenciaInsurance
-        iconClassnames={"w-56 mx-auto"}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        iconClassnames={"w-24 mx-auto"}
+   
         versionForm={1}
       />
 

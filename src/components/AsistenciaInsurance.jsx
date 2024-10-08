@@ -4,11 +4,12 @@ import {
   tiposDeUso,
   vehiculosDiesel,
 } from "../../DB/data";
+import iconSupport from "../images/user-support.png";
 import { InputForm, SelectForm } from "../utils/FormUtilities";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { useState } from "react";
 
-const AsistenciaInsurance = ({ icon, iconClassnames, versionForm = 1 }) => {
+const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
   const [numberValue, setNumberValue] = useState(0);
 
   return (
@@ -19,7 +20,7 @@ const AsistenciaInsurance = ({ icon, iconClassnames, versionForm = 1 }) => {
             className={iconClassnames}
             decoding="async"
             loading="lazy"
-            src={icon}
+            src={iconSupport}
           />
           <p className="text-center max-w-[8.5rem] mx-auto mt-6">
             Atención 24 horas y 7 días de la semana

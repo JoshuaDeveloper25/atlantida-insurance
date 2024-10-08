@@ -1,10 +1,11 @@
 import AtlantidaInsuranceProtegeSaludHeader from "./components/AtlantidaInsuranceProtegeSaludHeader";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
+import subfooter from "../../images/protege-salud-subfooter.jpeg";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
+import world from "../../images/world.png";
 
 const AtlantidaInsuranceProtegeSalud = () => {
   return (
@@ -17,17 +18,16 @@ const AtlantidaInsuranceProtegeSalud = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Cobertura de Salud"}
         titleSpan={"Internacional"}
         description={`Acceso a prestadores médicos y tecnológicos de primer nivel.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={world}
       />
 
       {/* Asistencia */}
       <AsistenciaInsurance
-        iconClassnames={"w-56 mx-auto"}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        iconClassnames={"w-24 mx-auto"}
       />
 
       {/* Socios Estratégicos */}
@@ -37,7 +37,7 @@ const AtlantidaInsuranceProtegeSalud = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tranquilidad asegurada, estés donde estés`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );

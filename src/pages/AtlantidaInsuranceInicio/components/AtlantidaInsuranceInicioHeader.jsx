@@ -21,7 +21,7 @@ const AtlantidaInsuranceInicioHeader = () => {
             </button>
           </article>
 
-          <article className="pt-0 md:pt-5 mx-auto max-w-2xl">
+          <article className="pt-0 md:pt-5 mx-auto max-w-xl">
             <img
               decoding="async"
               loading="lazy"

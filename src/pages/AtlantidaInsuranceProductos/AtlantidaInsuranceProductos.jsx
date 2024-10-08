@@ -2,9 +2,11 @@ import AtlantidaInsuranceProductosHeader from "./components/AtlantidaInsurancePr
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
+
+import subfooter from "../../images/productos-subfooter.jpg";
+import balloonHeart from "../../images/balloon-heart.png";
 
 const AtlantidaInsuranceProductos = () => {
   return (
@@ -17,19 +19,16 @@ const AtlantidaInsuranceProductos = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Cobertura de Vida Individual"}
         description={`Adquirir una póliza de vida garantiza al Asegurado la tranquilidad de darle el respaldo a su familia en
         caso de fallecimiento por accidente o enfermedad. En Atlántida Insurance te presentamos la póliza que
         este a la medida de tus necesidades y tu patrimonio`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={balloonHeart}
       />
 
       {/* Asistencia */}
-      <AsistenciaInsurance
-        iconClassnames={"w-56 mx-auto"}
-        icon={"https://dummyimage.com/600x400/000/fff"}
-      />
+      <AsistenciaInsurance iconClassnames={"w-24 mx-auto"} />
 
       {/* Socios Estratégicos */}
       <SociosEstrategicos />
@@ -38,7 +37,7 @@ const AtlantidaInsuranceProductos = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tu mejor elección en coberturas`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );

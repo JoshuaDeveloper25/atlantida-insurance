@@ -1,11 +1,34 @@
+// Logos
 import socio1 from "../src/images/socio1.png";
 import socio2 from "../src/images/socio2.png";
 import socio3 from "../src/images/socio3.png";
 import socio4 from "../src/images/socio4.png";
+import socio5 from "../src/images/socio5.png";
+import socio6 from "../src/images/socio6.png";
+import socio7 from "../src/images/socio7.png";
+import socio8 from "../src/images/socio8.png";
+import socio9 from "../src/images/socio9.png";
+import socio10 from "../src/images/socio10.jpg";
+
+// Icons
+import userHeart from "../src/images/heart-hand.png";
+import medkit from "../src/images/medkit.png";
+import document from "../src/images/document.png";
+import plane from "../src/images/plane.png";
+import car from "../src/images/car.png";
+import addShield from "../src/images/add-shield.png";
+import addUser from "../src/images/add-user.png";
+import searchUser from "../src/images/search-user.png";
+import luggageUser from "../src/images/luggage-hand.png";
+import searchLuggage from "../src/images/search-luggage.png";
+import exclamationShield from "../src/images/exclamation-shield.png";
+import userHand from "../src/images/user-hand.png";
+import building from "../src/images/building.png";
+import home from "../src/images/home.png";
 
 export const coberturasPersonas = [
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: userHeart,
     title: (
       <>
         Cobertura de <span className="block">Vida Individual</span>
@@ -15,7 +38,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: medkit,
     title: (
       <>
         Cobertura <span className="block">de Salud</span>
@@ -25,7 +48,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: document,
     title: (
       <>
         Cobertura de Salud <span className="block">Internacional</span>
@@ -35,7 +58,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: plane,
     title: (
       <>
         Cobertura de <span className="block">Asistencia en Viajes</span>
@@ -45,7 +68,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: car,
     title: (
       <>
         Cobertura de <span className="block">Vehículos</span>
@@ -55,7 +78,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: addShield,
     title: (
       <>
         Cobertura de Gastos <span className="block">Médicos Mayores</span>
@@ -65,7 +88,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: addUser,
     title: (
       <>
         Cobertura de <span className="block">Accidentes Personales</span>
@@ -75,7 +98,7 @@ export const coberturasPersonas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: searchUser,
     title: "Otras coberturas",
     link: "Conoce más",
   },
@@ -83,7 +106,7 @@ export const coberturasPersonas = [
 
 export const coberturasEmpresas = [
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: luggageUser,
     title: (
       <>
         Cobertura de Salud <span className="block">para PYMES</span> y
@@ -94,7 +117,8 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: searchLuggage,
+    imageClassname: "w-24",
     title: (
       <>
         Cobertura Colectiva <span className="block">de Vida</span>
@@ -104,7 +128,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: addShield,
     title: (
       <>
         Cobertura de Gastos <span className="block">Médicos Mayores</span>
@@ -114,7 +138,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: building,
     title: (
       <>
         Seguros <span className="block">Masivos</span>
@@ -124,7 +148,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: exclamationShield,
     title: (
       <>
         Riesgos <span className="block">Especiales</span>
@@ -134,7 +158,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: userHand,
     title: (
       <>
         Seguro <span className="block">Agrícola</span>
@@ -144,7 +168,7 @@ export const coberturasEmpresas = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: home,
     title: (
       <>
         Ramos <span className="block">Generales</span>
@@ -224,12 +248,17 @@ export const sociosEstrategicos = [
   },
 
   {
-    image: socio2,
+    image: socio9,
     url: "#",
   },
 
   {
-    image: socio3,
+    image: socio8,
+    url: "#",
+  },
+
+  {
+    image: socio2,
     url: "#",
   },
 
@@ -239,32 +268,27 @@ export const sociosEstrategicos = [
   },
 
   {
-    image: socio1,
-    url: "#",
-  },
-
-  {
-    image: socio2,
-    url: "#",
-  },
-
-  {
     image: socio3,
     url: "#",
   },
 
   {
-    image: socio4,
+    image: socio10,
     url: "#",
   },
 
   {
-    image: socio1,
+    image: socio7,
     url: "#",
   },
 
   {
-    image: socio2,
+    image: socio6,
+    url: "#",
+  },
+
+  {
+    image: socio5,
     url: "#",
   },
 ];

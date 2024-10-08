@@ -1,5 +1,5 @@
-import segurosCorporativos from "../../../images/seguros-corporativos.jpg";
-import logoPersona from "../../../images/seguros-corporativo-icono.png";
+import solucionesEmpresas from "../../../images/soluciones-empresas.jpg";
+import logoMetrics from "../../../images/metrics.png";
 
 const AtlantidaInsuranceInicioCorporativo = () => {
   return (
@@ -11,13 +11,18 @@ const AtlantidaInsuranceInicioCorporativo = () => {
               decoding="async"
               loading="lazy"
               className="w-full rounded-3xl"
-              src={'https://dummyimage.com/600x400/000/fff'}
+              src={solucionesEmpresas}
             />
           </article>
 
           <article className="text-secondary-color md:py-10 py-2">
             <div className="flex items-center gap-6 ms-16">
-              <img decoding="async" loading="lazy" src={logoPersona} />
+              <img
+                className="w-24"
+                decoding="async"
+                loading="lazy"
+                src={logoMetrics}
+              />
               <h2 className="family-nunito-regular leading-[1.2] font-bold lg:text-5xl text-3xl mb-2">
                 Soluciones <span className="block">para Empresas</span>
               </h2>

@@ -1,8 +1,9 @@
 import AtlantidaInsuranceSaludProtegidaHeader from "./components/AtlantidaInsuranceSaludProtegidaHeader";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
+import subfooter from "../../images/salud-protegida-subfooter.jpeg";
+import medkit from "../../images/medkit.png";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
@@ -17,19 +18,16 @@ const AtlantidaInsuranceSaludProtegida = () => {
 
       {/* Cobertura de Salud */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Cobertura de Salud"}
         description={`Planes médicos diseñados para priorizar tu salud y bienestar, ya sea a nivel individual o familiar. Con
         coberturas y beneficios adaptados a tus necesidades específicas y que te brindan acceso a una red de
         proveedores médicos en todo el país.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={medkit}
       />
 
       {/* Asistencia */}
-      <AsistenciaInsurance
-        iconClassnames={"w-56 mx-auto"}
-        icon={"https://dummyimage.com/600x400/000/fff"}
-      />
+      <AsistenciaInsurance iconClassnames={"w-24 mx-auto"} />
 
       {/* Socios Estratégicos */}
       <SociosEstrategicos />
@@ -38,7 +36,7 @@ const AtlantidaInsuranceSaludProtegida = () => {
       <SubFooter
         bgColor={`black`}
         title={`Vida y salud aseguradas, tranquilidad garantizada`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );
