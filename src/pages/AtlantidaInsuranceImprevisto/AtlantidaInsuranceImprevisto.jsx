@@ -1,8 +1,9 @@
 import AtlantidaInsuranceImprevistoHeader from "./components/AtlantidaInsuranceImprevistoHeader";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
+import subfooter from "../../images/imprevisto-subfooter.jpg";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
+import icon from "../../images/exclamation-shield.png";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
@@ -17,11 +18,11 @@ const AtlantidaInsuranceImprevisto = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Riesgos Especiales"}
         description={`Protege tu patrimonio, cuidando tu negocio.
         Las coberturas de riesgos especiales evitan pérdidas en tu inversión.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={icon}
       />
 
       {/* Asistencia */}
@@ -38,7 +39,7 @@ const AtlantidaInsuranceImprevisto = () => {
       <SubFooter
         bgColor={`black`}
         title={`Cobertura para cada eventualidad`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );
