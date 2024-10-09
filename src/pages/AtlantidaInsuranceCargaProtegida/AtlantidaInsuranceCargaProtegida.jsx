@@ -1,10 +1,11 @@
 import AtlantidaInsuranceCargaProtegidaHeader from "./components/AtlantidaInsuranceCargaProtegidaHeader";
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
+import subfooter from "../../images/carga-protegida-subfooter.webp";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
+import ship from "../../images/ship.png";
 
 const AtlantidaInsuranceCargaProtegida = () => {
   return (
@@ -17,11 +18,11 @@ const AtlantidaInsuranceCargaProtegida = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Transporte"}
         description={`Cobertura para los daños y pérdidas materiales sobrevenidas, bien al material de transporte, o bien a los
         objetos transportados en caso de traslado o viaje por vía fluvial, férrea, aérea o marítima.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={ship}
       />
 
       {/* Asistencia */}
@@ -37,7 +38,7 @@ const AtlantidaInsuranceCargaProtegida = () => {
       <SubFooter
         bgColor={`black`}
         title={`Seguro en cada kilómetro`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );
