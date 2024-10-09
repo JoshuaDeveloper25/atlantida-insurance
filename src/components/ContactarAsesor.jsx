@@ -1,3 +1,5 @@
+import userSupportAlt from "../images/user-support-alt.png";
+
 const ContactarAsesor = ({
   text = "¿Aún tienes preguntas?",
   textSpanned = "Contacta un asesor",
@@ -8,8 +10,8 @@ const ContactarAsesor = ({
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex flex-col md:flex-row md:gap-24 gap-10 items-center text-secondary-color">
             <img
-              src={"https://dummyimage.com/600x400/000/fff"}
-              className="w-72"
+              src={userSupportAlt}
+              className="w-24"
               decoding="async"
               loading="lazy"
             />
