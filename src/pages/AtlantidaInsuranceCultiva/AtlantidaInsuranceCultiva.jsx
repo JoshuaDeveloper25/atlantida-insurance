@@ -2,7 +2,8 @@ import AtlantidaInsuranceCultivaHeader from "./components/AtlantidaInsuranceCult
 import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import subfooter from "../../images/subfooter30.jpg";
+import subfooter from "../../images/cultiva-subfooter.jpg";
+import userHand from "../../images/user-hand.png";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
@@ -17,11 +18,11 @@ const AtlantidaInsuranceCultiva = () => {
 
       {/* Seguro de Vida */}
       <InfoPrincipal
-        iconClassnames={"w-56 mx-auto"}
+        iconClassnames={"w-24 mx-auto"}
         title={"Agrícola"}
         description={`Evita pérdidas financieras causadas por eventos climáticos y/o biológicos que afecten
         directamente a tu unidad de producción y garantice la seguridad de tus cultivos.`}
-        icon={"https://dummyimage.com/600x400/000/fff"}
+        icon={userHand}
       />
 
       {/* Asistencia */}
@@ -38,7 +39,7 @@ const AtlantidaInsuranceCultiva = () => {
       <SubFooter
         bgColor={`black`}
         title={`Tu tierra produce, nosotros la protegemos`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );
