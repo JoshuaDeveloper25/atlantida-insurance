@@ -3,7 +3,7 @@ import AtlantidaInsuranceBlogClientes from "./components/AtlantidaInsuranceBlogC
 import AtlantidaInsuranceBlogHeader from "./components/AtlantidaInsuranceBlogHeader";
 import AtlantidaInsuranceBlogRamos from "./components/AtlantidaInsuranceBlogRamos";
 import MasInformacion from "../../components/MasInformacion";
-// import subfooter from "../../images/subfooter29.webp";
+import subfooter from "../../images/subfooter-blog.jpg";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 
@@ -32,7 +32,7 @@ const AtlantidaInsuranceBlog = () => {
       <SubFooter
         bgColor={`black`}
         title={`Protección completa para cada aspecto`}
-        img={"https://dummyimage.com/600x400/000/fff"}
+        img={subfooter}
       />
     </>
   );

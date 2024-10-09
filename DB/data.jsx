@@ -25,6 +25,19 @@ import exclamationShield from "../src/images/exclamation-shield.png";
 import userHand from "../src/images/user-hand.png";
 import building from "../src/images/building.png";
 import home from "../src/images/home.png";
+import ship from "../src/images/ship.png";
+import truck from "../src/images/truck.png";
+
+import documentMetrics from "../src/images/document-metrics.png";
+import setting from "../src/images/setting.png";
+import documentCheck from "../src/images/document-check.png";
+import handCard from "../src/images/hand-card.png";
+import fireShield from "../src/images/fire-shield.png";
+import vault from "../src/images/vault.png";
+import settings from "../src/images/settings.png";
+import cpu from "../src/images/cpu.png";
+import userDollar from "../src/images/user-dollar.png";
+import umbrella from "../src/images/umbrella.png";
 
 export const coberturasPersonas = [
   {
@@ -360,19 +373,19 @@ export const preguntasFrecuentes = [
 
 export const ramosGenerales = [
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: ship,
     title: "Transporte",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: car,
     title: "Vehículos",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: truck,
     title: (
       <>
         Maquinaria y equipo <span className="block">móvil</span>{" "}
@@ -382,7 +395,7 @@ export const ramosGenerales = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: documentMetrics,
     title: (
       <>
         Cobertura de <span className="block">Responsabilidad Civil o</span>{" "}
@@ -393,7 +406,7 @@ export const ramosGenerales = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: setting,
     title: (
       <>
         Todo Riesgo de <span className="block">Construcción y</span> Montaje
@@ -403,49 +416,50 @@ export const ramosGenerales = [
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: documentCheck,
     title: "Fianzas/Garantías",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: handCard,
     title: "Seguro de Crédito",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: fireShield,
     title: "Incendio",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: vault,
     title: "Robo",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    imageClassname: "w-24",
+    image: settings,
     title: "Rotura de Maquinaria",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: cpu,
     title: "Equipo Electrónico",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: userDollar,
     title: "Lucro Cesante",
     link: "Conoce más",
   },
 
   {
-    image: "https://dummyimage.com/600x400/000/fff",
+    image: umbrella,
     title: "Multi-riesgo",
     link: "Conoce más",
   },

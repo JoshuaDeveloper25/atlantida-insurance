@@ -8,13 +8,17 @@ const AtlantidaInsuranceBlogRamos = () => {
         {ramosGenerales?.map((ramoGeneral, id) => (
           <article
             key={id}
-            className="py-4 rounded-2xl text-secondary-color/95 col-span-1"
+            className="w-56 py-4 rounded-2xl text-secondary-color/95 col-span-1"
           >
             <img
               src={ramoGeneral?.image}
               loading="lazy"
               decoding="async"
-              className="w-56"
+              className={
+                ramoGeneral?.imageClassname
+                  ? ramoGeneral?.imageClassname
+                  : "w-16 h-16 object-contain"
+              }
             />
 
             <h3 className="family-nunito-regular text-xl py-1">
