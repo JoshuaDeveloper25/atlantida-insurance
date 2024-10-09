@@ -1,3 +1,4 @@
+import registerBackground from "../../images/registrarse-background.png";
 import { InputForm, SelectForm } from "../../utils/FormUtilities";
 import { direcciones, numerosTelefono } from "../../../DB/data";
 import { Link } from "react-router-dom";
@@ -7,16 +8,16 @@ const AtlantidaInsuranceRegistrarse = () => {
     <main>
       <section className="container-page text-secondary-color">
         <div className="flex flex-col sm:flex-row items-center gap-4">
-          <div className="flex-1 w-full">
+          <div className="flex-1">
             <img
-              src="https://dummyimage.com/600x900/000/fff"
+              src={registerBackground}
               loading="lazy"
               decoding="async"
               className="rounded-md"
             />
           </div>
 
-          <form className="flex-1 w-full">
+          <form className="flex-[25%] w-full">
             <h2 className="font-[700] text-4xl mb-10">Registrarse ahora</h2>
             <div className="flex flex-col md:flex-row gap-3 mb-4">
               <div className="sm:w-auto w-full flex-1">
