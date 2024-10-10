@@ -22,7 +22,12 @@ const AtlantidaInsuranceRegistrarse = () => {
           </div>
 
           <div className="flex-[25%] w-full">
-            <Formulario setIsLoading={setIsLoading}>
+            <Formulario
+              templateVersionForm={
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION6_7
+              }
+              setIsLoading={setIsLoading}
+            >
               <h2 className="font-[700] text-4xl mb-10">Registrarse ahora</h2>
               <div className="flex flex-col md:flex-row gap-3 mb-4">
                 <div className="sm:w-auto w-full flex-1">
@@ -41,7 +46,7 @@ const AtlantidaInsuranceRegistrarse = () => {
                     inputProp={{
                       required: true,
                       name: "card_id",
-                      type: "email",
+                      type: "text",
                       placeholder: "Cédula*",
                     }}
                   />
