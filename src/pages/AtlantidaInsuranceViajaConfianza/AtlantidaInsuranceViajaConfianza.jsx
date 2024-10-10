@@ -27,7 +27,10 @@ const AtlantidaInsuranceViajaConfianza = () => {
       />
 
       {/* Asistencia */}
-      <AsistenciaInsurance iconClassnames={"w-24 mx-auto"} versionForm={2} />
+      <AsistenciaInsurance
+        iconClassnames={"w-24 mx-auto"} 
+        versionForm={2} 
+      />
 
       {/* Socios Estratégicos */}
       <SociosEstrategicos />
