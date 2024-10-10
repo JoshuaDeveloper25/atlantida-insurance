@@ -1,7 +1,11 @@
 import { InputForm, SelectForm } from "../utils/FormUtilities";
 import { tipoCobertura } from "../../DB/data";
+import { useState } from "react";
+import Formulario from "./Formulario";
 
 const MasInformacion = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <section className="bg-tertiary-color">
       <div className="container-page py-14">
@@ -17,13 +21,13 @@ const MasInformacion = () => {
           </article>
 
           <article className="flex-1 text-secondary-color">
-            <form className="space-y-3">
+            <Formulario setIsLoading={setIsLoading}>
               <div className="flex flex-col md:flex-row gap-3">
                 <div className="sm:w-auto w-full flex-1">
                   <InputForm
                     inputProp={{
                       required: true,
-                      name: "nombreCompleto",
+                      name: "firstlastname",
                       type: "text",
                       placeholder: "Nombre y Apellido",
                     }}
@@ -34,7 +38,7 @@ const MasInformacion = () => {
                   <InputForm
                     inputProp={{
                       required: true,
-                      name: "cedula",
+                      name: "card_id",
                       type: "number",
                       placeholder: "Cédula",
                     }}
@@ -47,7 +51,7 @@ const MasInformacion = () => {
                   <InputForm
                     inputProp={{
                       required: true,
-                      name: "ciudadResidencia",
+                      name: "residence_city",
                       type: "text",
                       placeholder: "Ciudad de residencia",
                     }}
@@ -56,7 +60,7 @@ const MasInformacion = () => {
 
                 <div className="sm:w-auto w-full flex-1">
                   <SelectForm
-                    selectProp={{ name: "tipoCobertura", required: true }}
+                    selectProp={{ name: "coverage_type", required: true }}
                     defaultValue={"Tipo de cobertura"}
                     options={tipoCobertura}
                   />
@@ -68,7 +72,7 @@ const MasInformacion = () => {
                   <InputForm
                     inputProp={{
                       required: true,
-                      name: "numeroTelefono",
+                      name: "phone",
                       type: "number",
                       placeholder: "Teléfono",
                     }}
@@ -79,7 +83,7 @@ const MasInformacion = () => {
                   <InputForm
                     inputProp={{
                       required: true,
-                      name: "ciudadResidencia",
+                      name: "email_id",
                       type: "email",
                       placeholder: "Email",
                     }}
@@ -90,7 +94,7 @@ const MasInformacion = () => {
               <div className="flex flex-col md:flex-row items-center gap-3">
                 <label className="sm:w-auto w-full flex-1">
                   <div className="flex">
-                    <input type="checkbox" className="me-2" />
+                    <input type="checkbox" required className="me-2" />
                     <p>
                       Acepto
                       <span className="text-primary-color ms-1">
@@ -103,13 +107,18 @@ const MasInformacion = () => {
                 <div className="sm:w-auto w-full flex-1">
                   <button
                     type="submit"
-                    className="btn-normal button-red-primary w-full"
+                    disabled={isLoading}
+                    className={`${
+                      isLoading
+                        ? "btn-normal btn-disabled w-full"
+                        : "btn-normal button-red-primary w-full"
+                    } `}
                   >
-                    Cotiza con nosotros
+                    {isLoading ? "Enviando..." : "Cotiza con nosotros"}
                   </button>
                 </div>
               </div>
-            </form>
+            </Formulario>
           </article>
         </div>
       </div>

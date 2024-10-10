@@ -88,7 +88,7 @@ const AtlantidaInsuranceRegistrarse = () => {
             <div className="flex flex-col md:flex-row items-center gap-3 mb-4">
               <label className="sm:w-auto w-full flex-1">
                 <div className="flex">
-                  <input type="checkbox" className="me-2" />
+                  <input type="checkbox" required className="me-2" />
                   <p>
                     Acepto
                     <span className="text-primary-color ms-1">

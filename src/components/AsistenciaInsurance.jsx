@@ -8,8 +8,10 @@ import iconSupport from "../images/user-support.png";
 import { InputForm, SelectForm } from "../utils/FormUtilities";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { useState } from "react";
+import Formulario from "./Formulario";
 
 const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const [numberValue, setNumberValue] = useState(0);
 
   return (
@@ -31,13 +33,14 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
           <h2 className="text-3xl mb-4">
             Para una propuesta personalizada detalla tus datos
           </h2>
-          <form className="space-y-3">
+
+          <Formulario setIsLoading={setIsLoading}>
             <div className="flex flex-col md:flex-row gap-3">
               <div className="sm:w-auto w-full flex-1">
                 <InputForm
                   inputProp={{
                     required: true,
-                    name: "nombreCompleto",
+                    name: "firstlastname",
                     type: "text",
                     placeholder: "Nombres y Apellidos",
                   }}
@@ -48,7 +51,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                 <InputForm
                   inputProp={{
                     required: true,
-                    name: "email",
+                    name: "email_id",
                     type: "email",
                     placeholder: "Email",
                   }}
@@ -61,7 +64,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                 <InputForm
                   inputProp={{
                     required: true,
-                    name: "numeroTelefono",
+                    name: "phone",
                     type: "number",
                     placeholder: "Número de teléfono",
                   }}
@@ -72,7 +75,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                 {versionForm === 3 ? (
                   <InputForm
                     inputProp={{
-                      name: "ciudadResidencia",
+                      name: "residence_city",
                       required: true,
                       type: "text",
                       placeholder: "Ciudad de residencia",
@@ -80,7 +83,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                   />
                 ) : (
                   <SelectForm
-                    selectProp={{ name: "ciudadResidencia", required: true }}
+                    selectProp={{ name: "residence_city", required: true }}
                     defaultValue={"Ciudad de residencia"}
                     options={ciudadResidencia}
                   />
@@ -93,7 +96,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
               <div className="flex flex-col md:flex-row gap-3">
                 <div className="sm:w-auto w-full flex-1">
                   <SelectForm
-                    selectProp={{ name: "tipoCobertura", required: true }}
+                    selectProp={{ name: "coverage_type", required: true }}
                     defaultValue={"Tipo de cobertura"}
                     options={tipoCobertura}
                   />
@@ -109,7 +112,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                   <div className="sm:w-auto w-full flex-1">
                     <InputForm
                       inputProp={{
-                        name: "fechaSalida",
+                        name: "exit_date",
                         required: true,
                         placeholder: "Fecha de salida",
                         type: "text",
@@ -120,7 +123,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                   <div className="sm:w-auto w-full flex-1">
                     <InputForm
                       inputProp={{
-                        name: "fechaRetorno",
+                        name: "return_date",
                         required: true,
                         placeholder: "Fecha de retorno",
                         type: "text",
@@ -208,7 +211,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
             <div className="flex flex-col md:flex-row items-center gap-3">
               <label className="sm:w-auto w-full flex-1">
                 <div className="flex">
-                  <input type="checkbox" className="me-2" />
+                  <input type="checkbox" required className="me-2" />
                   <p>
                     Acepto
                     <span className="text-primary-color ms-1">
@@ -221,13 +224,18 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
               <div className="sm:w-auto w-full flex-1">
                 <button
                   type="submit"
-                  className="btn-normal button-red-primary w-full"
+                  disabled={isLoading}
+                  className={`${
+                    isLoading
+                      ? "btn-normal btn-disabled w-full"
+                      : "btn-normal button-red-primary w-full"
+                  } `}
                 >
-                  Cotiza con nosotros
+                  {isLoading ? "Enviando..." : "Cotiza con nosotros"}
                 </button>
               </div>
             </div>
-          </form>
+          </Formulario>
         </article>
       </div>
     </section>
