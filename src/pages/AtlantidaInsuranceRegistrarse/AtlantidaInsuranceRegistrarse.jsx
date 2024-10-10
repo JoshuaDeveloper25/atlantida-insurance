@@ -2,8 +2,12 @@ import registerBackground from "../../images/registrarse-background.png";
 import { InputForm, SelectForm } from "../../utils/FormUtilities";
 import { direcciones, numerosTelefono } from "../../../DB/data";
 import { Link } from "react-router-dom";
+import Formulario from "../../components/Formulario";
+import { useState } from "react";
 
 const AtlantidaInsuranceRegistrarse = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <main>
       <section className="container-page text-secondary-color">
@@ -17,106 +21,113 @@ const AtlantidaInsuranceRegistrarse = () => {
             />
           </div>
 
-          <form className="flex-[25%] w-full">
-            <h2 className="font-[700] text-4xl mb-10">Registrarse ahora</h2>
-            <div className="flex flex-col md:flex-row gap-3 mb-4">
-              <div className="sm:w-auto w-full flex-1">
-                <InputForm
-                  inputProp={{
-                    required: true,
-                    name: "nombre",
-                    type: "text",
-                    placeholder: "Nombres",
-                  }}
-                />
-              </div>
-
-              <div className="sm:w-auto w-full flex-1">
-                <InputForm
-                  inputProp={{
-                    required: true,
-                    name: "cedula",
-                    type: "email",
-                    placeholder: "Cédula*",
-                  }}
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row gap-3 mb-4">
-              <div className="sm:w-auto w-full flex-1">
-                <InputForm
-                  inputProp={{
-                    required: true,
-                    name: "apellido",
-                    type: "text",
-                    placeholder: "Apellidos",
-                  }}
-                />
-              </div>
-
-              <div className="sm:w-auto w-full flex-1">
-                <SelectForm
-                  selectProp={{ name: "ciudadResidencia", required: true }}
-                  defaultValue={"Dirección*"}
-                  options={direcciones}
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row gap-3 mb-4">
-              <div className="sm:w-auto w-full flex-1">
-                <SelectForm
-                  selectProp={{ name: "telefono", required: true }}
-                  defaultValue={"Teléfono"}
-                  options={numerosTelefono}
-                />
-              </div>
-
-              <div className="sm:w-auto w-full flex-1">
-                <InputForm
-                  inputProp={{
-                    required: true,
-                    name: "email",
-                    type: "email",
-                    placeholder: "Email",
-                  }}
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-center gap-3 mb-4">
-              <label className="sm:w-auto w-full flex-1">
-                <div className="flex">
-                  <input type="checkbox" required className="me-2" />
-                  <p>
-                    Acepto
-                    <span className="text-primary-color ms-1">
-                      Términos y Condiciones
-                    </span>
-                  </p>
+          <div className="flex-[25%] w-full">
+            <Formulario setIsLoading={setIsLoading}>
+              <h2 className="font-[700] text-4xl mb-10">Registrarse ahora</h2>
+              <div className="flex flex-col md:flex-row gap-3 mb-4">
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "firstnames",
+                      type: "text",
+                      placeholder: "Nombres",
+                    }}
+                  />
                 </div>
-              </label>
 
-              <div className="sm:w-auto w-full flex-1">
-                <button
-                  type="submit"
-                  className="btn-normal button-red-primary w-full"
-                >
-                  Cotiza con nosotros
-                </button>
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "card_id",
+                      type: "email",
+                      placeholder: "Cédula*",
+                    }}
+                  />
+                </div>
               </div>
-            </div>
 
-            <div className="text-end">
-              <p>
-                ¿Ya tienes una cuenta?{" "}
-                <Link to={"#"} className=" text-primary-color">
-                  Ingresar
-                </Link>
-              </p>
-            </div>
-          </form>
+              <div className="flex flex-col md:flex-row gap-3 mb-4">
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "sur_names",
+                      type: "text",
+                      placeholder: "Apellidos",
+                    }}
+                  />
+                </div>
+
+                <div className="sm:w-auto w-full flex-1">
+                  <SelectForm
+                    selectProp={{ name: "address", required: true }}
+                    defaultValue={"Dirección*"}
+                    options={direcciones}
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-3 mb-4">
+                <div className="sm:w-auto w-full flex-1">
+                  <SelectForm
+                    selectProp={{ name: "phone", required: true }}
+                    defaultValue={"Teléfono"}
+                    options={numerosTelefono}
+                  />
+                </div>
+
+                <div className="sm:w-auto w-full flex-1">
+                  <InputForm
+                    inputProp={{
+                      required: true,
+                      name: "email_id",
+                      type: "email",
+                      placeholder: "Email",
+                    }}
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row items-center gap-3 mb-4">
+                <label className="sm:w-auto w-full flex-1">
+                  <div className="flex">
+                    <input type="checkbox" required className="me-2" />
+                    <p>
+                      Acepto
+                      <span className="text-primary-color ms-1">
+                        Términos y Condiciones
+                      </span>
+                    </p>
+                  </div>
+                </label>
+
+                <div className="sm:w-auto w-full flex-1">
+                  <button
+                    type="submit"
+                    disabled={isLoading}
+                    className={
+                      isLoading
+                        ? "btn-normal btn-disabled w-full"
+                        : "btn-normal button-red-primary w-full"
+                    }
+                  >
+                    {isLoading ? "Enviando..." : "Cotiza con nosotros"}
+                  </button>
+                </div>
+              </div>
+
+              <div className="text-end">
+                <p>
+                  ¿Ya tienes una cuenta?{" "}
+                  <Link to={"#"} className=" text-primary-color">
+                    Ingresar
+                  </Link>
+                </p>
+              </div>
+            </Formulario>
+          </div>
         </div>
       </section>
 

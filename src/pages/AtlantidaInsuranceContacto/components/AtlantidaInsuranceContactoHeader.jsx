@@ -18,7 +18,12 @@ const AtlantidaInsuranceContactoHeader = () => {
             Déjanos tus datos y un asesor se contactará contigo pronto
           </h1>
 
-          <Formulario setIsLoading={setIsLoading}>
+          <Formulario
+            templateVersionForm={
+              import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION1
+            }
+            setIsLoading={setIsLoading}
+          >
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex-1">
                 <InputForm

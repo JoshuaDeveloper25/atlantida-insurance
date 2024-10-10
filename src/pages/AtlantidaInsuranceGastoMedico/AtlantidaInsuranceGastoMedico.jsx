@@ -27,7 +27,11 @@ const AtlantidaInsuranceGastoMedico = () => {
       />
 
       {/* Asistencia */}
-      <AsistenciaInsurance iconClassnames={"w-24 mx-auto"} versionForm={1} />
+      <AsistenciaInsurance
+        templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION3}
+        iconClassnames={"w-24 mx-auto"}
+        versionForm={1}
+      />
 
       {/* Socios Estratégicos */}
       <SociosEstrategicos />

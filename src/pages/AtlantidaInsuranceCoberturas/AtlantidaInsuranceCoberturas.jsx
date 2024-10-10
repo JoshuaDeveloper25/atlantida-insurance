@@ -30,6 +30,7 @@ const AtlantidaInsuranceCoberturas = () => {
 
       {/* Asistencia */}
       <AsistenciaInsurance
+        templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION6}
         iconClassnames={"w-24 mx-auto"}
         versionForm={0}
       />

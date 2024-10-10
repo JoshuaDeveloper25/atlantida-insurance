@@ -21,7 +21,12 @@ const MasInformacion = () => {
           </article>
 
           <article className="flex-1 text-secondary-color">
-            <Formulario setIsLoading={setIsLoading}>
+            <Formulario
+              templateVersionForm={
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION2
+              }
+              setIsLoading={setIsLoading}
+            >
               <div className="flex flex-col md:flex-row gap-3">
                 <div className="sm:w-auto w-full flex-1">
                   <InputForm

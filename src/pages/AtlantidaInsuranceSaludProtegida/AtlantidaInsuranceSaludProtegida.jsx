@@ -27,7 +27,10 @@ const AtlantidaInsuranceSaludProtegida = () => {
       />
 
       {/* Asistencia */}
-      <AsistenciaInsurance iconClassnames={"w-24 mx-auto"} />
+      <AsistenciaInsurance
+        templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION3}
+        iconClassnames={"w-24 mx-auto"}
+      />
 
       {/* Socios Estratégicos */}
       <SociosEstrategicos />

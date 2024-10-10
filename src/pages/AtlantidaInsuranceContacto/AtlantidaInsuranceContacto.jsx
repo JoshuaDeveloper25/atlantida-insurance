@@ -1,10 +1,9 @@
 import AtlantidaInsuranceContactoHeading from "./components/AtlantidaInsuranceContactoHeading";
 import AtlantidaInsuranceContactoHeader from "./components/AtlantidaInsuranceContactoHeader";
-import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import subfooter from "../../images/subfooterinsurancecontacto.jpg";
+import ContactarAsesor from "../../components/ContactarAsesor";
 import SubFooter from "../../components/SubFooter";
 import RedBanner from "../../components/RedBanner";
-import ContactarAsesor from "../../components/ContactarAsesor";
 
 const AtlantidaInsuranceContacto = () => {
   return (

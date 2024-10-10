@@ -22,7 +22,8 @@ const AtlantidaInsuranceEventualidad = () => {
         title={"Responsabilidad Civil o"}
         titleSpan={
           <>
-            Profesional por Daños a <span className="sm:block inline">Terceros</span>
+            Profesional por Daños a{" "}
+            <span className="sm:block inline">Terceros</span>
           </>
         }
         description={`Protege tu patrimonio y evita pérdidas financieras importantes. Resuelve los daños que sufran tus
@@ -32,6 +33,7 @@ const AtlantidaInsuranceEventualidad = () => {
 
       {/* Asistencia */}
       <AsistenciaInsurance
+        templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION3}
         iconClassnames={"w-24 mx-auto"}
         versionForm={1}
       />

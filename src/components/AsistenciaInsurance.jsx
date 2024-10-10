@@ -10,7 +10,11 @@ import { FaMinus, FaPlus } from "react-icons/fa";
 import { useState } from "react";
 import Formulario from "./Formulario";
 
-const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
+const AsistenciaInsurance = ({
+  iconClassnames,
+  versionForm = 1,
+  templateVersionForm = "",
+}) => {
   const [isLoading, setIsLoading] = useState(false);
   const [numberValue, setNumberValue] = useState(0);
 
@@ -34,7 +38,10 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
             Para una propuesta personalizada detalla tus datos
           </h2>
 
-          <Formulario setIsLoading={setIsLoading}>
+          <Formulario
+            templateVersionForm={templateVersionForm}
+            setIsLoading={setIsLoading}
+          >
             <div className="flex flex-col md:flex-row gap-3">
               <div className="sm:w-auto w-full flex-1">
                 <InputForm
@@ -136,7 +143,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                   <div className="sm:w-auto w-full flex-1">
                     <InputForm
                       inputProp={{
-                        name: "fechaSalida",
+                        name: "destiny_country",
                         required: true,
                         placeholder: "País de destino",
                         type: "text",
@@ -155,9 +162,14 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                             className="px-3 bg-primary-color text-white rounded-s-md size-9"
                           />
                         </button>
-                        <h4 className="text-sm text-secondary-color px-4">
-                          {numberValue}
-                        </h4>
+                        <input
+                          className="outline-none w-10 text-center px-2"
+                          name="people_quantity"
+                          value={numberValue}
+                          type="tel"
+                          readOnly
+                          min={0}
+                        />
                         <button type="button">
                           <FaPlus
                             onClick={() => setNumberValue((prev) => prev + 1)}
@@ -177,7 +189,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                   <div className="sm:w-auto w-full flex-1">
                     <InputForm
                       inputProp={{
-                        name: "numeroPlaca",
+                        name: "plate_number",
                         required: true,
                         placeholder: "Número de placa",
                         type: "number",
@@ -187,7 +199,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
 
                   <div className="sm:w-auto w-full flex-1">
                     <SelectForm
-                      selectProp={{ name: "tiposUso", required: true }}
+                      selectProp={{ name: "use_types", required: true }}
                       defaultValue={"Tipos de uso"}
                       options={tiposDeUso}
                     />
@@ -197,7 +209,7 @@ const AsistenciaInsurance = ({ iconClassnames, versionForm = 1 }) => {
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="sm:w-auto w-full flex-1">
                     <SelectForm
-                      selectProp={{ name: "vehiculosDiesel", required: true }}
+                      selectProp={{ name: "diesel_cars", required: true }}
                       defaultValue={"Vehículos de diésel"}
                       options={vehiculosDiesel}
                     />

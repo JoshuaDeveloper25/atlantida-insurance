@@ -1,19 +1,11 @@
-import emailjs from "@emailjs/browser";
-import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
-const Formulario = ({ children, setIsLoading }) => {
+const Formulario = ({ children, setIsLoading, templateVersionForm = "" }) => {
   const navigate = useNavigate();
   const form = useRef();
-
-  // We make the url appear in a hidden input
-  useEffect(() => {
-    if (form.current) {
-      form.current.querySelector('input[name="from_url"]').value =
-        window.location.href;
-    }
-  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,12 +16,16 @@ const Formulario = ({ children, setIsLoading }) => {
       return toast.error("¡Llena los espacios en blanco!");
     }
 
-    console.log(form.current);
+    // Asigna el valor de la URL antes de enviar el formulario
+    const fromUrlInput = form.current.querySelector('input[name="from_url"]');
+    if (fromUrlInput) {
+      fromUrlInput.value = window.location.href;
+    }
 
     try {
       emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateVersionForm,
         form.current,
         {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
