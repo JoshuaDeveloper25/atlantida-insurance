@@ -116,6 +116,10 @@ const AtlantidaInsuranceRegistrarseLazy = lazy(() =>
   import("./pages/AtlantidaInsuranceRegistrarse/AtlantidaInsuranceRegistrarse")
 );
 
+const CorreoEnviadoExitosamenteLazy = lazy(() =>
+  import("./pages/CorreoEnviadoExitosamente/CorreoEnviadoExitosamente")
+);
+
 const router = createBrowserRouter([
   // --> Normal Pages
   {
@@ -125,6 +129,11 @@ const router = createBrowserRouter([
       {
         element: <AtlantidaInsuranceInicioLazy />,
         index: true,
+      },
+
+      {
+        element: <CorreoEnviadoExitosamenteLazy />,
+        path: `/correo-enviado-exitosamente`,
       },
 
       {

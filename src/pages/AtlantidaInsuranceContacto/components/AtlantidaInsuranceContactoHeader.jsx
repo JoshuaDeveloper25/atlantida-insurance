@@ -4,8 +4,12 @@ import {
   TextareaForm,
 } from "../../../utils/FormUtilities";
 import { emails } from "../../../../DB/data";
+import Formulario from "../../../components/Formulario";
+import { useState } from "react";
 
 const AtlantidaInsuranceContactoHeader = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <section className="container-page my-6">
       <div className="flex flex-col md:flex-row justify-between md:items-center items-start md:gap-6 gap-0 md:max-w-none max-w-lg mx-auto">
@@ -14,13 +18,13 @@ const AtlantidaInsuranceContactoHeader = () => {
             Déjanos tus datos y un asesor se contactará contigo pronto
           </h1>
 
-          <form className="space-y-5">
+          <Formulario setIsLoading={setIsLoading}>
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex-1">
                 <InputForm
                   inputProp={{
                     required: true,
-                    name: "nombre",
+                    name: "user_name",
                     type: "text",
                     placeholder: "Nombre",
                   }}
@@ -31,7 +35,7 @@ const AtlantidaInsuranceContactoHeader = () => {
                 <InputForm
                   inputProp={{
                     required: true,
-                    name: "apellido",
+                    name: "sur_name",
                     type: "text",
                     placeholder: "Apellidos",
                   }}
@@ -44,7 +48,7 @@ const AtlantidaInsuranceContactoHeader = () => {
                 <InputForm
                   inputProp={{
                     required: true,
-                    name: "telefono",
+                    name: "phone",
                     type: "text",
                     placeholder: "Teléfono",
                   }}
@@ -53,7 +57,7 @@ const AtlantidaInsuranceContactoHeader = () => {
 
               <div className="flex-1">
                 <SelectForm
-                  selectProp={{ name: "email", required: true }}
+                  selectProp={{ name: "email_id", required: true }}
                   defaultValue={"Email"}
                   options={emails}
                 />
@@ -64,14 +68,14 @@ const AtlantidaInsuranceContactoHeader = () => {
               textareaProp={{
                 placeholder: "Mensaje",
                 required: true,
-                name: "mensaje",
+                name: "message",
               }}
             />
 
             <div className="flex flex-col md:flex-row items-center gap-3">
               <label className="sm:w-auto w-full flex-1">
                 <div className="flex">
-                  <input type="checkbox" className="me-2" />
+                  <input type="checkbox" className="me-2" required />
                   <p>
                     Acepto
                     <span className="text-primary-color ms-1">
@@ -83,14 +87,19 @@ const AtlantidaInsuranceContactoHeader = () => {
 
               <div className="sm:w-auto w-full flex-1">
                 <button
+                  disabled={isLoading}
                   type="submit"
-                  className="btn-normal button-red-primary w-full"
+                  className={`${
+                    isLoading
+                      ? "btn-normal btn-disabled w-full"
+                      : "btn-normal button-red-primary w-full"
+                  } `}
                 >
-                  Cotiza con nosotros
+                  {isLoading ? "Enviando..." : "Cotiza con nosotros"}
                 </button>
               </div>
             </div>
-          </form>
+          </Formulario>
         </article>
 
         <article className="flex-1 bg-tertiary-color mt-5 p-5 rounded-md">
