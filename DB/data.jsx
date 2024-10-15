@@ -1,4 +1,4 @@
-// Logos
+// --> Logos
 import socio1 from "../src/images/socio1.png";
 import socio2 from "../src/images/socio2.png";
 import socio3 from "../src/images/socio3.png";
