@@ -48,6 +48,7 @@ export const coberturasPersonas = [
       </>
     ),
     link: "Conoce más",
+    href: "/productos",
   },
 
   {
@@ -58,6 +59,7 @@ export const coberturasPersonas = [
       </>
     ),
     link: "Conoce más",
+    href: "/salud-protegida",
   },
 
   {
@@ -68,6 +70,7 @@ export const coberturasPersonas = [
       </>
     ),
     link: "Conoce más",
+    href: "/protege-salud",
   },
 
   {
@@ -78,6 +81,7 @@ export const coberturasPersonas = [
       </>
     ),
     link: "Conoce más",
+    href: "/viaja-confianza",
   },
 
   {
@@ -88,6 +92,7 @@ export const coberturasPersonas = [
       </>
     ),
     link: "Conoce más",
+    href: "/conduce-seguro",
   },
 
   {
@@ -98,6 +103,7 @@ export const coberturasPersonas = [
       </>
     ),
     link: "Conoce más",
+    href: "/gasto-medico",
   },
 
   {
@@ -108,12 +114,14 @@ export const coberturasPersonas = [
       </>
     ),
     link: "Conoce más",
+    href: "/proteccion-integral",
   },
 
   {
     image: searchUser,
     title: "Otras coberturas",
     link: "Conoce más",
+    href: "/amplitud-coberturas",
   },
 ];
 
@@ -127,6 +135,7 @@ export const coberturasEmpresas = [
       </>
     ),
     link: "Conoce más",
+    href: "/proteccion-personalizada",
   },
 
   {
@@ -138,6 +147,7 @@ export const coberturasEmpresas = [
       </>
     ),
     link: "Conoce más",
+    href: "/servicios",
   },
 
   {
@@ -148,6 +158,7 @@ export const coberturasEmpresas = [
       </>
     ),
     link: "Conoce más",
+    href: "/gasto-medico",
   },
 
   {
@@ -158,6 +169,7 @@ export const coberturasEmpresas = [
       </>
     ),
     link: "Conoce más",
+    href: "/empresa-potencial",
   },
 
   {
@@ -168,6 +180,7 @@ export const coberturasEmpresas = [
       </>
     ),
     link: "Conoce más",
+    href: "/imprevisto",
   },
 
   {
@@ -178,6 +191,7 @@ export const coberturasEmpresas = [
       </>
     ),
     link: "Conoce más",
+    href: "/cultiva",
   },
 
   {
@@ -188,6 +202,7 @@ export const coberturasEmpresas = [
       </>
     ),
     link: "Conoce más",
+    href: "/blog",
   },
 ];
 

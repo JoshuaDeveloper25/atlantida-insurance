@@ -21,7 +21,7 @@ const AtlantidaInsuranceInicioCoberturasPersonas = () => {
               {coberturaPersona?.title}
             </h3>
 
-            <Link className="text-primary-color">
+            <Link to={coberturaPersona?.href} className="text-primary-color">
               {coberturaPersona?.link} {">"}
             </Link>
           </article>
