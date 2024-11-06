@@ -24,7 +24,10 @@ const AtlantidaInsuranceBlogRamos = () => {
               {ramoGeneral?.title}
             </h3>
 
-            <a href="mailto:info@insuratlan.com" className="text-primary-color">
+            <a
+              href={`mailto:info@insuratlan.com?subject=${ramoGeneral?.title}`}
+              className="text-primary-color"
+            >
               {ramoGeneral?.link} {">"}
             </a>
           </article>

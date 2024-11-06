@@ -655,32 +655,20 @@ export const ramosGenerales = [
 
   {
     image: truck,
-    title: (
-      <>
-        Maquinaria y equipo <span className="block">móvil</span>{" "}
-      </>
-    ),
+    title: "Maquinaria y equipo móvil",
     link: "Conoce más",
   },
 
   {
     image: documentMetrics,
-    title: (
-      <>
-        Cobertura de <span className="block">Responsabilidad Civil o</span>{" "}
-        Profesional por Daños <span className="block">a Terceros</span>
-      </>
-    ),
+    title:
+      "Cobertura de Responsabilidad Civil o Profesional por Daños a Terceros",
     link: "Conoce más",
   },
 
   {
     image: setting,
-    title: (
-      <>
-        Todo Riesgo de <span className="block">Construcción y</span> Montaje
-      </>
-    ),
+    title: "Todo Riesgo de Construcción y Montaje",
     link: "Conoce más",
   },
 
