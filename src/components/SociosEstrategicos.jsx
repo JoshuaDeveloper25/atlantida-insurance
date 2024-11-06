@@ -1,5 +1,4 @@
-import { sociosEstrategicos } from "../../DB/data";
-import { Link } from "react-router-dom";
+import SociosEstrategicosCarousel from "./SociosEstrategicosCarousel";
 
 const SociosEstrategicos = () => {
   return (
@@ -10,22 +9,9 @@ const SociosEstrategicos = () => {
         </h2>
       </article>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 grid-cols-1 gap-8">
-        {sociosEstrategicos?.map((socioEstraategico, index) => (
-          <Link
-            key={index}
-            to={socioEstraategico?.url}
-            className="block sm:mx-0 mx-auto"
-          >
-            <img
-              loading="lazy"
-              decoding="async"
-              src={socioEstraategico?.image}
-              className="w-32 h-20  object-contain flex justify-center items-center"
-            />
-          </Link>
-        ))}
-      </div>
+      <article>
+        <SociosEstrategicosCarousel />
+      </article>
     </section>
   );
 };

@@ -47,7 +47,7 @@ const NavbarAtlantidaInsurance = () => {
                 {text}
               </NavLink>
             ) : (
-              <div className="group relative cursor-pointer">
+              <div key={index} className="group relative cursor-pointer">
                 <div className="hover:text-primary-color flex items-center justify-between gap-4">
                   <NavLink
                     className={
@@ -203,7 +203,7 @@ const NavbarAtlantidaInsurance = () => {
                   {text}
                 </NavLink>
               ) : (
-                <div className="group relative cursor-pointer">
+                <div key={index} className="group relative cursor-pointer">
                   <div className="hover:text-primary-color flex items-center justify-between gap-4">
                     <NavLink
                       className={
