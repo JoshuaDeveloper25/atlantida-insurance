@@ -6,6 +6,7 @@ import medkit from "../../images/medkit.png";
 import InfoPrincipal from "../../components/InfoPrincipal";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
+import { tipoCobertura } from "../../../DB/data";
 
 const AtlantidaInsuranceSaludProtegida = () => {
   return (
@@ -29,6 +30,7 @@ const AtlantidaInsuranceSaludProtegida = () => {
       {/* Asistencia */}
       <AsistenciaInsurance
         templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION3}
+        versionCoverageType={tipoCobertura[1]}
         iconClassnames={"w-24 mx-auto"}
       />
 

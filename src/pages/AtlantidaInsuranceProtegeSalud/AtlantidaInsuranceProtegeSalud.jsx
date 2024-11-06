@@ -5,6 +5,7 @@ import subfooter from "../../images/protege-salud-subfooter.jpeg";
 import InfoPrincipal from "../../components/InfoPrincipal";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
+import { tipoCobertura } from "../../../DB/data";
 import world from "../../images/world.png";
 
 const AtlantidaInsuranceProtegeSalud = () => {
@@ -28,6 +29,7 @@ const AtlantidaInsuranceProtegeSalud = () => {
       {/* Asistencia */}
       <AsistenciaInsurance
         templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION3}
+        versionCoverageType={tipoCobertura[1]}
         iconClassnames={"w-24 mx-auto"}
       />
 

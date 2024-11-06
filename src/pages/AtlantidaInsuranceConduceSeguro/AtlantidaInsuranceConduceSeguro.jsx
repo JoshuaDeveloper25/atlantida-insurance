@@ -5,6 +5,7 @@ import subfooter from "../../images/conduce-seguro-subfooter.jpeg";
 import InfoPrincipal from "../../components/InfoPrincipal";
 import SubFooter from "../../components/SubFooter";
 import RedBanner from "../../components/RedBanner";
+import { tipoCobertura } from "../../../DB/data";
 import car from "../../images/car.png";
 
 const AtlantidaInsuranceConduceSeguro = () => {
@@ -29,6 +30,7 @@ const AtlantidaInsuranceConduceSeguro = () => {
       {/* Asistencia */}
       <AsistenciaInsurance
         templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION5}
+        versionCoverageType={tipoCobertura[2]}
         iconClassnames={"w-24 mx-auto"}
         versionForm={3}
       />

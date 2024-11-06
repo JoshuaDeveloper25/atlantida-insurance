@@ -7,6 +7,7 @@ import SubFooter from "../../components/SubFooter";
 
 import subfooter from "../../images/productos-subfooter.jpg";
 import balloonHeart from "../../images/balloon-heart.png";
+import { tipoCobertura } from "../../../DB/data";
 
 const AtlantidaInsuranceProductos = () => {
   return (
@@ -30,6 +31,7 @@ const AtlantidaInsuranceProductos = () => {
       {/* Asistencia */}
       <AsistenciaInsurance
         templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION3}
+        versionCoverageType={tipoCobertura[0]}
         iconClassnames={"w-24 mx-auto"}
       />
 

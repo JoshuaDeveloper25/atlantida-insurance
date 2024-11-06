@@ -303,13 +303,57 @@ export const experienciaClientes = [
 ];
 
 export const tipoCobertura = [
-  {
-    tipo: "Tipo 1",
-  },
+  // --> Cobertura de Vida Individual [0]
+  [
+    {
+      tipo: "Tipo 1",
+    },
 
-  {
-    tipo: "Provincia",
-  },
+    {
+      tipo: "Provincia",
+    },
+  ],
+
+  // --> Cobertura Salud Internacional, Cobertura de Salud, Gastos Médicos Mayores [1]
+  [
+    {
+      tipo: "Individual",
+    },
+
+    {
+      tipo: "Familiar",
+    },
+  ],
+
+  // --> Cobertura de Vehículo [2]
+  [
+    {
+      tipo: "Privado",
+    },
+
+    {
+      tipo: "Turístico",
+    },
+
+    {
+      tipo: "Carga",
+    },
+
+    {
+      tipo: "Taxi",
+    },
+
+    {
+      tipo: "Público",
+    },
+  ],
+
+  // --> Accidentes Personales [3]
+  [
+    {
+      tipo: "Individual",
+    },
+  ],
 ];
 
 export const ciudadResidencia = [

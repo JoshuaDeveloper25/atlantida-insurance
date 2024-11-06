@@ -1,7 +1,5 @@
 import {
   ciudadResidencia,
-  tipoCobertura,
-  tiposDeUso,
   vehiculosDiesel,
 } from "../../DB/data";
 import iconSupport from "../images/user-support.png";
@@ -14,6 +12,7 @@ const AsistenciaInsurance = ({
   iconClassnames,
   versionForm = 1,
   templateVersionForm = "",
+  versionCoverageType,
 }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [numberValue, setNumberValue] = useState(0);
@@ -112,7 +111,7 @@ const AsistenciaInsurance = ({
                   <SelectForm
                     selectProp={{ name: "coverage_type", required: true }}
                     defaultValue={"Tipo de cobertura"}
-                    options={tipoCobertura}
+                    options={versionCoverageType}
                   />
                 </div>
 
@@ -207,8 +206,8 @@ const AsistenciaInsurance = ({
                   <div className="sm:w-auto w-full flex-1">
                     <SelectForm
                       selectProp={{ name: "use_types", required: true }}
-                      defaultValue={"Tipos de uso"}
-                      options={tiposDeUso}
+                      defaultValue={"Tipo de Cobertura"}
+                      options={versionCoverageType}
                     />
                   </div>
                 </div>
