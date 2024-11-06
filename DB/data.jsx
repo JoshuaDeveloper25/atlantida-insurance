@@ -358,7 +358,7 @@ export const tipoCobertura = [
     },
   ],
 
-  // --> Cobertura Salud Internacional, Cobertura de Salud [1]
+  // --> Cobertura Salud Internacional, Cobertura de Salud, Gastos Médicos Mayores (Personas) [1]
   [
     {
       tipo: "Individual",
@@ -399,7 +399,7 @@ export const tipoCobertura = [
     },
   ],
 
-  // --> Protección Personalizada, Cobertura Colectiva de Vida [4]
+  // --> Protección Personalizada, Cobertura Colectiva de Vida, Gastos Médicos Mayores (Empresas) [4]
   [
     {
       tipo: "PYMES",
