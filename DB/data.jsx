@@ -44,7 +44,7 @@ export const navbarLinks = [
     to: "/",
     text: "Inicio",
   },
-  
+
   {
     to: "/quienes-somos",
     text: "¿Quiénes somos?",
@@ -251,12 +251,12 @@ export const experienciaClientes = [
 
   {
     feedback:
-      "Atlántida Insurance buscó la mejor cobertura según mis necesidades. Cuento con un seguro de salud completo que ha sido de gran ayuda durante mi período de embarazo. Su servicio es impecable.",
+      "Mi experiencia con el broker ha sido muy satisfactoria. Me han asesorado desde el primer momento, siempre han estado dispuestos a resolver mis inquietudes y los trámites de reembolso han sido muy ágiles.",
   },
 
   {
     feedback:
-      "Atlántida Insurance buscó la mejor cobertura según mis necesidades. Cuento con un seguro de salud completo que ha sido de gran ayuda durante mi período de embarazo. Su servicio es impecable.",
+      "Atlántida Insurance me otorga la tranquilidad y confianza que necesito en cada atención médica. Ahora, puedo tomar como prioridad mi salud y bienestar integral gracias a todos los beneficios que recibo. Gracias a Atlántida Insurance siento que mi salud está respaldada en todo momento.",
   },
 ];
 
