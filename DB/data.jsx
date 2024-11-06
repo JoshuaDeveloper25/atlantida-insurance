@@ -44,15 +44,15 @@ export const navbarLinks = [
     to: "/",
     text: "Inicio",
   },
+  
+  {
+    to: "/quienes-somos",
+    text: "¿Quiénes somos?",
+  },
 
   {
     to: "/productos",
     text: "Productos",
-  },
-
-  {
-    to: "/quienes-somos",
-    text: "¿Quiénes somos?",
   },
 
   {
