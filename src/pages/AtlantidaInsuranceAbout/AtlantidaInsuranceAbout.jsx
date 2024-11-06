@@ -26,7 +26,7 @@ const AtlantidaInsuranceAbout = () => {
       <AtlantidaInsuranceAboutValores />
 
       {/* Más información */}
-      <MasInformacion />
+      <MasInformacion versionCoverageType={null} />
 
       {/* Subfooter 31 */}
       <SubFooter

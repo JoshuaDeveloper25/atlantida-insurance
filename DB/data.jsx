@@ -645,14 +645,12 @@ export const ramosGenerales = [
     image: ship,
     title: "Transporte",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
     image: car,
     title: "Vehículos",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
@@ -663,7 +661,6 @@ export const ramosGenerales = [
       </>
     ),
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
@@ -675,7 +672,6 @@ export const ramosGenerales = [
       </>
     ),
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
@@ -686,35 +682,30 @@ export const ramosGenerales = [
       </>
     ),
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
     image: documentCheck,
     title: "Fianzas/Garantías",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
     image: handCard,
     title: "Seguro de Crédito",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
     image: fireShield,
     title: "Incendio",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
     image: vault,
     title: "Robo",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
@@ -722,28 +713,24 @@ export const ramosGenerales = [
     image: settings,
     title: "Rotura de Maquinaria",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
     image: cpu,
     title: "Equipo Electrónico",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
     image: userDollar,
     title: "Lucro Cesante",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 
   {
     image: umbrella,
     title: "Multi-riesgo",
     link: "Conoce más",
-    to: "https://insuratlan.com/",
   },
 ];
 

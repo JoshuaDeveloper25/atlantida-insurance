@@ -26,7 +26,7 @@ const AtlantidaInsuranceBlog = () => {
       <AtlantidaInsuranceBlogClientes />
 
       {/* Más información */}
-      <MasInformacion />
+      <MasInformacion versionCoverageType={null} />
 
       {/* Subfooter 29 */}
       <SubFooter

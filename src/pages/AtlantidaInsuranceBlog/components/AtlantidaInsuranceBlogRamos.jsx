@@ -1,5 +1,4 @@
 import { ramosGenerales } from "../../../../DB/data";
-import { Link } from "react-router-dom";
 
 const AtlantidaInsuranceBlogRamos = () => {
   return (
@@ -25,9 +24,9 @@ const AtlantidaInsuranceBlogRamos = () => {
               {ramoGeneral?.title}
             </h3>
 
-            <Link to={ramoGeneral?.to} className="text-primary-color">
+            <a href="mailto:info@insuratlan.com" className="text-primary-color">
               {ramoGeneral?.link} {">"}
-            </Link>
+            </a>
           </article>
         ))}
       </div>

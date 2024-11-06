@@ -16,7 +16,9 @@ const AtlantidaInsuranceInicio = () => {
       <AtlantidaInsuranceInicioHeader />
 
       {/* Banner Rojo */}
-      <RedBanner bannerTitle={`Seguros para la vida, confianza para siempre.`} />
+      <RedBanner
+        bannerTitle={`Seguros para la vida, confianza para siempre.`}
+      />
 
       {/* Personales */}
       <AtlantidaInsuranceInicioPersonales />
@@ -34,7 +36,7 @@ const AtlantidaInsuranceInicio = () => {
       <AtlantidaInsuranceInicioClientes />
 
       {/* Más información */}
-      <MasInformacion />
+      <MasInformacion versionCoverageType={null} />
 
       {/* Subfooter 29 */}
       <SubFooter

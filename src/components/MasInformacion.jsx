@@ -1,9 +1,9 @@
 import { InputForm, SelectForm } from "../utils/FormUtilities";
-import { ciudadResidencia, tipoCobertura } from "../../DB/data";
+import { ciudadResidencia } from "../../DB/data";
 import { useState } from "react";
 import Formulario from "./Formulario";
 
-const MasInformacion = () => {
+const MasInformacion = ({ versionCoverageType }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
@@ -74,7 +74,7 @@ const MasInformacion = () => {
                   <SelectForm
                     selectProp={{ name: "coverage_type", required: true }}
                     defaultValue={"Tipo de cobertura"}
-                    options={tipoCobertura}
+                    options={versionCoverageType}
                   />
                 </div>
               </div>
