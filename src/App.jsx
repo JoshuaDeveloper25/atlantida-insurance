@@ -137,7 +137,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/productos",
+        path: "/vida-individual",
         element: <AtlantidaInsuranceProductosLazy />,
       },
 

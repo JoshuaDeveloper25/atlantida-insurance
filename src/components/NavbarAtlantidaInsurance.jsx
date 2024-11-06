@@ -25,9 +25,9 @@ const NavbarAtlantidaInsurance = () => {
 
         <div className="hidden lg:flex items-center gap-8">
           {navbarLinks?.map((navLink, index) => {
-            const { to, text } = navLink;
+            const { to, text, isDropdown = false, dropdownLinks } = navLink;
 
-            return (
+            return !isDropdown ? (
               <NavLink
                 key={index}
                 onClick={() => setNavbarOpen(false)}
@@ -40,6 +40,53 @@ const NavbarAtlantidaInsurance = () => {
               >
                 {text}
               </NavLink>
+            ) : (
+              <div className="group relative cursor-pointer">
+                <div className="hover:text-primary-color flex items-center justify-between gap-4">
+                  <NavLink
+                    className={
+                      "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black text-[.9rem]"
+                    }
+                    to={"#"}
+                  >
+                    Productos
+                  </NavLink>
+
+                  <span className="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className={`h-6 w-6`}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                </div>
+
+                <div className="invisible absolute z-58 flex w-48 right-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
+                  {dropdownLinks?.map((dropdownLinks, index) => {
+                    const { text, to } = dropdownLinks;
+                    return (
+                      <NavLink
+                        key={index}
+                        className={
+                          "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
+                        }
+                        to={to}
+                      >
+                        {text}
+                      </NavLink>
+                    );
+                  })}
+                </div>
+              </div>
             );
           })}
 

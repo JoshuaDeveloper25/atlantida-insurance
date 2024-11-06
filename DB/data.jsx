@@ -51,8 +51,50 @@ export const navbarLinks = [
   },
 
   {
-    to: "/productos",
+    to: "#",
     text: "Productos",
+    dropdownLinks: [
+      {
+        text: "Vida Individual",
+        to: "/vida-individual",
+      },
+
+      {
+        text: "Salud",
+        to: "/salud-protegida",
+      },
+
+      {
+        text: "Salud Internacional",
+        to: "/protege-salud",
+      },
+
+      {
+        text: "Asistencia en Viajes",
+        to: "/viaja-confianza",
+      },
+
+      {
+        text: "Vehículos",
+        to: "/conduce-seguro",
+      },
+
+      {
+        text: "Gastos Médicos Mayores",
+        to: "/gasto-medico",
+      },
+
+      {
+        text: "Accidentes Personales",
+        to: "/proteccion-integral",
+      },
+
+      {
+        text: "Otras coberturas",
+        to: "/amplitud-coberturas",
+      },
+    ],
+    isDropdown: true,
   },
 
   {
@@ -85,7 +127,7 @@ export const coberturasPersonas = [
       </>
     ),
     link: "Conoce más",
-    href: "/productos",
+    href: "/vida-individual",
   },
 
   {
