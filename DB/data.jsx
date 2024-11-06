@@ -1,7 +1,7 @@
 // --> Logos
 import socio1 from "../src/images/socio1.png";
-import socio2 from "../src/images/socio2.png";
-import socio3 from "../src/images/socio3.png";
+import socio2 from "../src/images/socio2.webp";
+import socio3 from "../src/images/socio3.webp";
 import socio4 from "../src/images/socio4.png";
 import socio5 from "../src/images/socio5.png";
 import socio6 from "../src/images/socio6.png";
@@ -627,7 +627,8 @@ export const preguntasFrecuentes = [
 
   {
     question: "¿Qué es un copago?",
-    answer: "Es la cantidad de dinero (porcentaje) que debe cubrir el afiliado como parte del valor del servicio requerido.",
+    answer:
+      "Es la cantidad de dinero (porcentaje) que debe cubrir el afiliado como parte del valor del servicio requerido.",
     id: 4,
   },
 
