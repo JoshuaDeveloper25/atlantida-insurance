@@ -82,7 +82,7 @@ export const navbarLinks = [
       },
 
       {
-        text: "Gastos Médicos Mayores",
+        text: "Gastos Médicos Mayores (Personas)",
         to: "/gasto-medico",
       },
 
@@ -117,8 +117,8 @@ export const navbarLinks = [
       },
 
       {
-        text: "Gastos Médicos Mayores",
-        to: "/gasto-medico",
+        text: "Gastos Médicos Mayores (Empresas)",
+        to: "/respaldo-economico",
       },
 
       {
@@ -337,7 +337,7 @@ export const experienciaClientes = [
 
   {
     feedback:
-      "Mi experiencia con el broker ha sido muy satisfactoria. Me han asesorado desde el primer momento, siempre han estado dispuestos a resolver mis inquietudes y los trámites de reembolso han sido muy ágiles.",
+      "Mi experiencia con el bróker ha sido muy satisfactoria. Me han asesorado desde el primer momento, siempre han estado dispuestos a resolver mis inquietudes y los trámites de reembolso han sido muy ágiles.",
   },
 
   {
