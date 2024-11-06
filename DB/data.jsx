@@ -39,6 +39,43 @@ import cpu from "../src/images/cpu.png";
 import userDollar from "../src/images/user-dollar.png";
 import umbrella from "../src/images/umbrella.png";
 
+export const navbarLinks = [
+  {
+    to: "/",
+    text: "Inicio",
+  },
+
+  {
+    to: "/productos",
+    text: "Productos",
+  },
+
+  {
+    to: "/quienes-somos",
+    text: "¿Quiénes somos?",
+  },
+
+  {
+    to: "/servicios",
+    text: "Servicios",
+  },
+
+  {
+    to: "/recursos",
+    text: "Recursos",
+  },
+
+  {
+    to: "/blog",
+    text: "Blog",
+  },
+
+  {
+    to: "/contacto",
+    text: "Contacto",
+  },
+];
+
 export const coberturasPersonas = [
   {
     image: userHeart,

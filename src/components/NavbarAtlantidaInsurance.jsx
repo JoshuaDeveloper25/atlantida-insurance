@@ -1,6 +1,7 @@
 import logoAtlantidaInsurance from "../images/nuestraempresa7.png";
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { navbarLinks } from "../../DB/data";
 import { createPortal } from "react-dom";
 import { useState } from "react";
 
@@ -23,89 +24,24 @@ const NavbarAtlantidaInsurance = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-8">
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/`}
-          >
-            Inicio
-          </NavLink>
+          {navbarLinks?.map((navLink, index) => {
+            const { to, text } = navLink;
 
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/productos`}
-          >
-            Productos
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/quienes-somos`}
-          >
-            ¿Quiénes somos?
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/servicios`}
-          >
-            Servicios
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/recursos`}
-          >
-            Recursos
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold family-nunito-black"
-                : "text-secondary-color hover:text-primary-color hover:border-b-primary-color transition-all duration-200 font-extrabold family-nunito-black"
-            }
-            to={`/blog`}
-          >
-            Blog
-          </NavLink>
-
-          <NavLink
-            onClick={() => setNavbarOpen(false)}
-            className={({ isActive }) =>
-              isActive
-                ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
-                : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
-            }
-            to={`/contacto`}
-          >
-            Contacto
-          </NavLink>
+            return (
+              <NavLink
+                key={index}
+                onClick={() => setNavbarOpen(false)}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-primary-color font-extrabold hover:text-primary-color family-nunito-black"
+                    : "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                }
+                to={to}
+              >
+                {text}
+              </NavLink>
+            );
+          })}
 
           <NavLink
             onClick={() => setNavbarOpen(false)}
@@ -189,89 +125,24 @@ const NavbarAtlantidaInsurance = () => {
           </button>
 
           <div className="flex flex-col mt-10 gap-6">
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/`}
-            >
-              Inicio
-            </NavLink>
+            {navbarLinks?.map((navLink, index) => {
+              const { to, text } = navLink;
 
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/productos`}
-            >
-              Productos
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/quienes-somos`}
-            >
-              ¿Quiénes somos?
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/servicios`}
-            >
-              Servicios
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/recursos`}
-            >
-              Recursos
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/blog`}
-            >
-              Blog
-            </NavLink>
-
-            <NavLink
-              onClick={() => setNavbarOpen(false)}
-              className={({ isActive }) =>
-                isActive
-                  ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
-                  : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
-              }
-              to={`/contacto`}
-            >
-              Contacto
-            </NavLink>
+              return (
+                <NavLink
+                  key={index}
+                  onClick={() => setNavbarOpen(false)}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-primary-color font-extrabold border-b-primary-color border-b pb-1 family-nunito-black"
+                      : "text-secondary-color border-b-secondary-color/15 hover:text-primary-color pb-1 hover:border-b-primary-color transition-all duration-200 border-b font-extrabold family-nunito-black"
+                  }
+                  to={to}
+                >
+                  {text}
+                </NavLink>
+              );
+            })}
 
             <NavLink
               onClick={() => setNavbarOpen(false)}
