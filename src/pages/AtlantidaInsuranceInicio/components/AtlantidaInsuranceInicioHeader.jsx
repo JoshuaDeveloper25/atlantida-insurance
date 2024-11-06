@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hombreHeader from "../../../images/insurance-inicio.png";
 
 const AtlantidaInsuranceInicioHeader = () => {
@@ -16,9 +17,14 @@ const AtlantidaInsuranceInicioHeader = () => {
               </span>{" "}
               <span className="family-nunito-black ">en seguros </span>
             </h1>
-            <button className="btn-normal button-red-primary" type="button">
+
+            {/* We use 'a' tag because its more optimized for every device */}
+            <a
+              className="btn-normal button-red-primary"
+              href={"tel:+593985376977"}
+            >
               Cotiza con nosotros
-            </button>
+            </a>
           </article>
 
           <article className="pt-0 md:pt-5 mx-auto max-w-xl">

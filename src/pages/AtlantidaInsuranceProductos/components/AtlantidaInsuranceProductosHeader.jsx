@@ -6,11 +6,18 @@ const AtlantidaInsuranceProductosHeader = () => {
       <div className="container-page flex flex-col lg:flex-row  items-center gap-3">
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="text-4xl sm:text-5xl leading-10 md:mb-8 mb-0">
-            <span className="font-[700]">Asegurar tu vida</span>{" "} es
-            <span className="sm:block inline">proteger a tu familia y  </span>
+            <span className="font-[700]">Asegurar tu vida</span> es
+            <span className="sm:block inline">proteger a tu familia y </span>
             <span>tu patrimonio</span>
           </h1>
-          <button className="btn-normal button-red-primary mt-3" type="button">Cotiza con nosotros</button>
+
+          {/* We use 'a' tag because its more optimized for every device */}
+          <a
+            className="btn-normal button-red-primary mt-3"
+            href={"tel:+593985376977"}
+          >
+            Cotiza con nosotros
+          </a>
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-4xl">
