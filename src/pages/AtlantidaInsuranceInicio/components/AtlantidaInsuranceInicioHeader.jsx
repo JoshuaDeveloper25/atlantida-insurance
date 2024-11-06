@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import hombreHeader from "../../../images/insurance-inicio.png";
+import { LinkTel } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceInicioHeader = () => {
   return (
@@ -18,13 +19,7 @@ const AtlantidaInsuranceInicioHeader = () => {
               <span className="family-nunito-black ">en seguros </span>
             </h1>
 
-            {/* We use 'a' tag because its more optimized for every device */}
-            <a
-              className="btn-normal button-red-primary"
-              href={"tel:+593985376977"}
-            >
-              Cotiza con nosotros
-            </a>
+            <LinkTel />
           </article>
 
           <article className="pt-0 md:pt-5 mx-auto max-w-xl">

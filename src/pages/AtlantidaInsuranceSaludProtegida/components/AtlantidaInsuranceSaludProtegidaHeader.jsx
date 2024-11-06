@@ -1,4 +1,5 @@
 import familiaHeader from "../../../images/salud-protegida-header.png";
+import { LinkEmailHardCoded } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceSaludProtegidaHeader = () => {
   return (
@@ -9,9 +10,10 @@ const AtlantidaInsuranceSaludProtegidaHeader = () => {
             <span className="font-[700]">Tu salud protegida,</span>{" "}
             <span className="sm:block inline">estés donde estés </span>
           </h1>
-          <button className="btn-normal button-red-primary mt-3" type="button">
-            Cotiza con nosotros
-          </button>
+
+          <div className="mt-3">
+            <LinkEmailHardCoded />
+          </div>
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-3xl">

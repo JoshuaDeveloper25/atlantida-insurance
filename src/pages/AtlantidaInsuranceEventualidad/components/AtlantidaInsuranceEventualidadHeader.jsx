@@ -1,4 +1,5 @@
 import hombreHeader from "../../../images/eventualidad-header.png";
+import { LinkEmailHardCoded } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceEventualidadHeader = () => {
   return (
@@ -11,9 +12,10 @@ const AtlantidaInsuranceEventualidadHeader = () => {
             </span>{" "}
             cuenta con nosotros
           </h1>
-          <button className="btn-normal button-red-primary mt-3" type="button">
-            Cotiza con nosotros
-          </button>
+
+          <div className="mt-3">
+            <LinkEmailHardCoded />
+          </div>
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-2xl">

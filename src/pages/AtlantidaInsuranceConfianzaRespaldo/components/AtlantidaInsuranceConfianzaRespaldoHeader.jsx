@@ -1,4 +1,5 @@
 import hombreHeader from "../../../images/confianza-respaldo-header.png";
+import { LinkEmailHardCoded } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceConfianzaRespaldoHeader = () => {
   return (
@@ -7,12 +8,15 @@ const AtlantidaInsuranceConfianzaRespaldoHeader = () => {
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="text-4xl sm:text-5xl leading-10 md:mb-8 mb-0">
             <span className="font-[700]">Confianza</span> y respaldo en
-            <span className="sm:block inline">cada <span className="font-[700]">decisión</span></span>
+            <span className="sm:block inline">
+              cada <span className="font-[700]">decisión</span>
+            </span>
             <span className="font-[700]">empresarial</span>
           </h1>
-          <button className="btn-normal button-red-primary mt-3" type="button">
-            Cotiza con nosotros
-          </button>
+
+          <div className="mt-3">
+            <LinkEmailHardCoded />
+          </div>
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-3xl">

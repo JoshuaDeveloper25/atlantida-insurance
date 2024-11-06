@@ -1,4 +1,5 @@
 import hombresHeader from "../../../images/protege-salud-header.png";
+import { LinkEmailHardCoded } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceProtegeSaludHeader = () => {
   return (
@@ -12,9 +13,10 @@ const AtlantidaInsuranceProtegeSaludHeader = () => {
             </span>
             <span className="sm:block inline font-[700]">mundo</span>
           </h1>
-          <button className="btn-normal button-red-primary mt-3" type="button">
-            Cotiza con nosotros
-          </button>
+
+          <div className="mt-3">
+            <LinkEmailHardCoded />
+          </div>
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-3xl">

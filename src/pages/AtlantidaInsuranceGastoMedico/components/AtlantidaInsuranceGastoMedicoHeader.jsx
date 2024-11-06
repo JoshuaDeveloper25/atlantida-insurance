@@ -1,4 +1,5 @@
 import headerPrev from "../../../images/gasto-medico-header.png";
+import { LinkEmailHardCoded } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceGastoMedicoHeader = () => {
   return (
@@ -10,9 +11,10 @@ const AtlantidaInsuranceGastoMedicoHeader = () => {
             <span className="sm:block inline font-[700]">gastos médicos</span>{" "}
             <span className="font-[700]">importantes</span>
           </h1>
-          <button className="btn-normal button-red-primary mt-3" type="button">
-            Cotiza con nosotros
-          </button>
+
+          <div className="mt-3">
+            <LinkEmailHardCoded />
+          </div>
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-3xl">

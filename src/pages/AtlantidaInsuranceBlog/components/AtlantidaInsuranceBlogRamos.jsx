@@ -1,3 +1,4 @@
+import { LinkEmailDynamic } from "../../../utils/LinkSending";
 import { ramosGenerales } from "../../../../DB/data";
 
 const AtlantidaInsuranceBlogRamos = () => {
@@ -24,12 +25,7 @@ const AtlantidaInsuranceBlogRamos = () => {
               {ramoGeneral?.title}
             </h3>
 
-            <a
-              href={`mailto:info@insuratlan.com?subject=${ramoGeneral?.title}`}
-              className="text-primary-color"
-            >
-              {ramoGeneral?.link} {">"}
-            </a>
+            <LinkEmailDynamic title={ramoGeneral?.title} link={ramoGeneral?.link} />
           </article>
         ))}
       </div>

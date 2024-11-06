@@ -1,4 +1,5 @@
 import hombreHeader from "../../../images/insurance-productos.png";
+import { LinkTel } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceProductosHeader = () => {
   return (
@@ -11,13 +12,7 @@ const AtlantidaInsuranceProductosHeader = () => {
             <span>tu patrimonio</span>
           </h1>
 
-          {/* We use 'a' tag because its more optimized for every device */}
-          <a
-            className="btn-normal button-red-primary mt-3"
-            href={"tel:+593985376977"}
-          >
-            Cotiza con nosotros
-          </a>
+          <LinkTel />
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-4xl">

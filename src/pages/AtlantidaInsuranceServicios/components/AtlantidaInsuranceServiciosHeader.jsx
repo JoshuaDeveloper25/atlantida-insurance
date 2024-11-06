@@ -1,4 +1,5 @@
 import headerPrev from "../../../images/servicios-header.png";
+import { LinkTel } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceProductosHeader = () => {
   return (
@@ -10,13 +11,7 @@ const AtlantidaInsuranceProductosHeader = () => {
             <span className="font-[700] sm:block inline">futuro protegido</span>
           </h1>
 
-          {/* We use 'a' tag because its more optimized for every device */}
-          <a
-            className="btn-normal button-red-primary"
-            href={"tel:+593985376977"}
-          >
-            Cotiza con nosotros
-          </a>
+          <LinkTel />
         </article>
 
         <article className="pt-0 md:pt-5 mx-auto max-w-2xl">

@@ -1,4 +1,5 @@
 import userSupportAlt from "../images/user-support-alt.png";
+import { Link } from "react-router-dom";
 
 const ContactarAsesor = ({
   text = "¿Aún tienes preguntas?",
@@ -25,9 +26,9 @@ const ContactarAsesor = ({
           </div>
 
           <div>
-            <button type="button" className="btn-normal button-red-primary">
+            <Link to={"/contacto"} className="btn-normal button-red-primary">
               Escríbenos
-            </button>
+            </Link>
           </div>
         </div>
       </div>
