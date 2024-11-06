@@ -605,26 +605,29 @@ export const valores = [
 export const preguntasFrecuentes = [
   {
     question: "¿Por qué necesito un corredor de seguros?",
-    answer: "Respuesta.",
+    answer:
+      "Como intermediario entre clientes y compañías de seguros, un corredor de seguros simplifica su vida analizando, investigando y asegurando la cobertura de seguro adecuada, además de manejar todos los trámites y procesos contractuales necesarios. En esencia, agilizamos todo el proceso de seguro para usted.",
     id: 1,
   },
 
   {
     question: "¿Por qué debo tener una póliza de seguro?",
-    answer: "Respuesta.",
+    answer:
+      "Tener un seguro te permite estar preparado para cualquier emergencia. Así nos protegemos a nosotros mismos y a nuestras familias. Hay circunstancias que no prevemos, como accidentes, robos, enfermedades o desastres naturales, que podrían causar daños a nuestro patrimonio o a nosotros mismos.",
     id: 2,
   },
 
   {
     question:
       "¿Si ya estoy asegurado como puedo solicitar la asesoría de Atlántida insurance?",
-    answer: "Respuesta.",
+    answer:
+      "Recibimos numerosas consultas de personas que buscan modificar sus pólizas y obtener nuestra asistencia y asesoría en diversas pólizas de seguros. Convertirse en un asegurado nuestro es un proceso sencillo que no representa ningún gasto adicional más allá de lo que ya pagas a tu aseguradora actual.",
     id: 3,
   },
 
   {
     question: "¿Qué es un copago?",
-    answer: "Respuesta.",
+    answer: "Es la cantidad de dinero (porcentaje) que debe cubrir el afiliado como parte del valor del servicio requerido.",
     id: 4,
   },
 
