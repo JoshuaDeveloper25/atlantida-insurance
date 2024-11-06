@@ -1,5 +1,5 @@
 import logoAtlantidaInsurance from "../images/nuestraempresa7.png";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { TECollapse } from "tw-elements-react";
 import { IoLocation } from "react-icons/io5";
@@ -48,20 +48,29 @@ const FooterAtlantidaInsurance = () => {
                   <span className="block font-[700]">info@insuratlan.com</span>
                 </h4>
               </div>
-              <div>
+              <div className="flex">
                 <button
-                  className="bg-primary-color text-white rounded-md p-1 me-3"
+                  className="bg-primary-color text-white rounded-md p-1"
                   type="button"
                 >
                   <FaInstagram size={24} />
                 </button>
 
                 <button
-                  className="bg-primary-color text-white rounded-md p-1"
+                  className="bg-primary-color text-white rounded-md p-1 mx-3"
                   type="button"
                 >
                   <FaLinkedinIn size={24} />
                 </button>
+
+                <Link
+                  to={"https://www.facebook.com/profile.php?id=61564282654089"}
+                  className="block bg-primary-color text-white rounded-md p-1"
+                  target="_blank"
+                  type="button"
+                >
+                  <FaFacebook size={24} />
+                </Link>
               </div>
             </div>
           </div>

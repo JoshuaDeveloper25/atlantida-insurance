@@ -150,10 +150,11 @@ export const navbarLinks = [
     text: "Recursos",
   },
 
-  {
-    to: "/blog",
-    text: "Blog",
-  },
+  // {
+  //   // to: "/blog",
+  //   to: "#",
+  //   text: "Blog",
+  // },
 
   {
     to: "/contacto",
