@@ -3,9 +3,9 @@ import AsistenciaInsurance from "../../components/AsistenciaInsurance";
 import subfooter from "../../images/amplitud-coberturas-subfooter.jpg";
 import SociosEstrategicos from "../../components/SociosEstrategicos";
 import InfoPrincipal from "../../components/InfoPrincipal";
-import icon from "../../images/search-user.png";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
+import icon from "../../images/search-user.png";
 
 const AtlantidaInsuranceCoberturas = () => {
   return (
@@ -21,7 +21,7 @@ const AtlantidaInsuranceCoberturas = () => {
         iconClassnames={"w-24 mx-auto"}
         title={"Otras coberturas"}
         subTitle={
-          "Multirriesgo, agrícola, casco áereo, canal no tradicional, entre otros."
+          "Seguro para mascotas, casco áereo, canal no tradicional, entre otros."
         }
         description={`Contamos con una amplia gama de soluciones de seguros de todos los ramos y con las mejores y
         más reconocidas compañías de seguros.`}

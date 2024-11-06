@@ -6,6 +6,7 @@ import InfoPrincipal from "../../components/InfoPrincipal";
 import icon from "../../images/exclamation-shield.png";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
+import { tipoCobertura } from "../../../DB/data";
 
 const AtlantidaInsuranceImprevisto = () => {
   return (
@@ -29,6 +30,7 @@ const AtlantidaInsuranceImprevisto = () => {
       <AsistenciaInsurance
         templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION3}
         iconClassnames={"w-24 mx-auto"}
+        coverageType={false}
         versionForm={1}
       />
 

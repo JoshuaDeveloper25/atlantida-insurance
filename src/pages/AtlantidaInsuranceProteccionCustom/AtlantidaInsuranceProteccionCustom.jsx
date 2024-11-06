@@ -6,6 +6,7 @@ import InfoPrincipal from "../../components/InfoPrincipal";
 import RedBanner from "../../components/RedBanner";
 import SubFooter from "../../components/SubFooter";
 import envelope from "../../images/envelope.png";
+import { tipoCobertura } from "../../../DB/data";
 
 const AtlantidaInsuranceProteccionCustom = () => {
   return (
@@ -28,6 +29,7 @@ const AtlantidaInsuranceProteccionCustom = () => {
       {/* Asistencia */}
       <AsistenciaInsurance
         templateVersionForm={import.meta.env.VITE_EMAILJS_TEMPLATE_ID_VERSION3}
+        versionCoverageType={tipoCobertura[4]}
         iconClassnames={"w-24 mx-auto"}
         versionForm={1}
       />

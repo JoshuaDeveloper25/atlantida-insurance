@@ -4,7 +4,7 @@ const AtlantidaInsuranceAboutBroker = () => {
       <div className="flex flex-col sm:flex-row gap-8 items-center">
         <article className="flex-1">
           <h2 className="family-nunito-semibold sm:text-5xl text-4xl text-secondary-color">
-            Tu broker y <span className="md:block inline">asesor de</span> confianza
+            Tu bróker y <span className="md:block inline">asesor de</span> confianza
           </h2>
         </article>
 

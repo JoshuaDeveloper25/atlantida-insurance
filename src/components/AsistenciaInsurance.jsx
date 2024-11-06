@@ -1,7 +1,4 @@
-import {
-  ciudadResidencia,
-  vehiculosDiesel,
-} from "../../DB/data";
+import { ciudadResidencia, vehiculosDiesel } from "../../DB/data";
 import iconSupport from "../images/user-support.png";
 import { InputForm, SelectForm } from "../utils/FormUtilities";
 import { FaMinus, FaPlus } from "react-icons/fa";
@@ -13,6 +10,7 @@ const AsistenciaInsurance = ({
   versionForm = 1,
   templateVersionForm = "",
   versionCoverageType,
+  coverageType = true,
 }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [numberValue, setNumberValue] = useState(0);
@@ -105,7 +103,7 @@ const AsistenciaInsurance = ({
             </div>
 
             {/* Version Forms */}
-            {versionForm === 1 && (
+            {versionForm === 1 && coverageType && (
               <div className="flex flex-col md:flex-row gap-3">
                 <div className="sm:w-auto w-full flex-1">
                   <SelectForm
@@ -189,7 +187,7 @@ const AsistenciaInsurance = ({
               </>
             )}
 
-            {versionForm === 3 && (
+            {versionForm === 3 && coverageType && (
               <>
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="sm:w-auto w-full flex-1">
