@@ -157,7 +157,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/blog",
+        path: "/ramos-generales",
         element: <AtlantidaInsuranceBlogLazy />,
       },
 

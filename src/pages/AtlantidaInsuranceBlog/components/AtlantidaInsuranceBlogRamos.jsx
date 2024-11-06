@@ -25,7 +25,7 @@ const AtlantidaInsuranceBlogRamos = () => {
               {ramoGeneral?.title}
             </h3>
 
-            <Link className="text-primary-color">
+            <Link to={ramoGeneral?.to} className="text-primary-color">
               {ramoGeneral?.link} {">"}
             </Link>
           </article>
