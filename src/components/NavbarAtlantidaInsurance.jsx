@@ -25,7 +25,13 @@ const NavbarAtlantidaInsurance = () => {
 
         <div className="hidden lg:flex items-center gap-8">
           {navbarLinks?.map((navLink, index) => {
-            const { to, text, isDropdown = false, dropdownLinks } = navLink;
+            const {
+              to,
+              text,
+              isDropdown = false,
+              dropdownLinks,
+              dropdownTitle,
+            } = navLink;
 
             return !isDropdown ? (
               <NavLink
@@ -49,7 +55,7 @@ const NavbarAtlantidaInsurance = () => {
                     }
                     to={"#"}
                   >
-                    Productos
+                    {dropdownTitle}
                   </NavLink>
 
                   <span className="">
@@ -70,7 +76,7 @@ const NavbarAtlantidaInsurance = () => {
                   </span>
                 </div>
 
-                <div className="invisible absolute z-58 flex w-48 right-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
+                <div className="invisible absolute z-[9999] flex w-48 right-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
                   {dropdownLinks?.map((dropdownLinks, index) => {
                     const { text, to } = dropdownLinks;
                     return (
@@ -175,7 +181,13 @@ const NavbarAtlantidaInsurance = () => {
 
           <div className="flex flex-col mt-10 gap-6">
             {navbarLinks?.map((navLink, index) => {
-              const { to, text, isDropdown = false, dropdownLinks } = navLink;
+              const {
+                to,
+                text,
+                isDropdown = false,
+                dropdownLinks,
+                dropdownTitle,
+              } = navLink;
 
               return !isDropdown ? (
                 <NavLink
@@ -199,7 +211,7 @@ const NavbarAtlantidaInsurance = () => {
                       }
                       to={"#"}
                     >
-                      Productos
+                      {dropdownTitle}
                     </NavLink>
 
                     <span className="">
@@ -220,7 +232,7 @@ const NavbarAtlantidaInsurance = () => {
                     </span>
                   </div>
 
-                  <div className="invisible absolute z-58 flex w-full right-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
+                  <div className="invisible absolute z-[9999] flex w-full right-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
                     {dropdownLinks?.map((dropdownLinks, index) => {
                       const { text, to } = dropdownLinks;
                       return (

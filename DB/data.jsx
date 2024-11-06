@@ -53,6 +53,8 @@ export const navbarLinks = [
   {
     to: "#",
     text: "Productos",
+
+    // This is for if it's a dropdown
     dropdownLinks: [
       {
         text: "Vida Individual",
@@ -95,11 +97,52 @@ export const navbarLinks = [
       },
     ],
     isDropdown: true,
+    dropdownTitle: "Productos",
   },
 
   {
     to: "/servicios",
     text: "Servicios",
+
+    // This is for if it's a dropdown
+    dropdownLinks: [
+      {
+        text: "Salud para PYMES y Corporativos",
+        to: "/proteccion-personalizada",
+      },
+
+      {
+        text: "Colectiva de Vida",
+        to: "/servicios",
+      },
+
+      {
+        text: "Gastos Médicos Mayores",
+        to: "/gasto-medico",
+      },
+
+      {
+        text: "Seguros Masivos",
+        to: "/empresa-potencial",
+      },
+
+      {
+        text: "Riesgos Especiales",
+        to: "/imprevisto",
+      },
+
+      {
+        text: "Seguro Agrícola",
+        to: "/cultiva",
+      },
+
+      {
+        text: "Ramos Generales",
+        to: "/blog",
+      },
+    ],
+    isDropdown: true,
+    dropdownTitle: "Servicios",
   },
 
   {
