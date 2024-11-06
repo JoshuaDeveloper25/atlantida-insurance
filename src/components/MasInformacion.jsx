@@ -1,5 +1,5 @@
 import { InputForm, SelectForm } from "../utils/FormUtilities";
-import { tipoCobertura } from "../../DB/data";
+import { ciudadResidencia, tipoCobertura } from "../../DB/data";
 import { useState } from "react";
 import Formulario from "./Formulario";
 
@@ -53,13 +53,20 @@ const MasInformacion = () => {
 
               <div className="flex flex-col md:flex-row gap-3">
                 <div className="sm:w-auto w-full flex-1">
-                  <InputForm
+                  {/* Before it was an input */}
+                  {/* <InputForm
                     inputProp={{
                       required: true,
                       name: "residence_city",
                       type: "text",
                       placeholder: "Ciudad de residencia",
                     }}
+                  /> */}
+
+                  <SelectForm
+                    selectProp={{ name: "residence_city", required: true }}
+                    defaultValue={"Ciudad de residencia"}
+                    options={ciudadResidencia}
                   />
                 </div>
 

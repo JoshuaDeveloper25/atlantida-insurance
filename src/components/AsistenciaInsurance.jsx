@@ -80,18 +80,25 @@ const AsistenciaInsurance = ({
 
               <div className="sm:w-auto w-full flex-1">
                 {versionForm === 3 ? (
-                  <InputForm
-                    inputProp={{
-                      name: "residence_city",
-                      required: true,
-                      type: "text",
-                      placeholder: "Ciudad de residencia",
-                    }}
+                  // Before it was an input
+                  // <InputForm
+                  //   inputProp={{
+                  //     name: "residence_city",
+                  //     required: true,
+                  //     type: "text",
+                  //     placeholder: "Ciudad de residencia",
+                  //   }}
+                  // />
+
+                  <SelectForm
+                    selectProp={{ name: "residence_city", required: true }}
+                    defaultValue={"Provincia"}
+                    options={ciudadResidencia}
                   />
                 ) : (
                   <SelectForm
                     selectProp={{ name: "residence_city", required: true }}
-                    defaultValue={"Ciudad de residencia"}
+                    defaultValue={"Provincia"}
                     options={ciudadResidencia}
                   />
                 )}

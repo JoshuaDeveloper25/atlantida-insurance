@@ -304,37 +304,109 @@ export const experienciaClientes = [
 
 export const tipoCobertura = [
   {
-    tipo: "1",
+    tipo: "Tipo 1",
   },
 
   {
-    tipo: "2",
-  },
-
-  {
-    tipo: "3",
-  },
-
-  {
-    tipo: "4",
+    tipo: "Provincia",
   },
 ];
 
 export const ciudadResidencia = [
   {
-    tipo: "El Progreso",
+    tipo: "Azuay",
   },
 
   {
-    tipo: "Tegucigalpa",
+    tipo: "Bolívar",
   },
 
   {
-    tipo: "Comayagua",
+    tipo: "Cañar",
   },
 
   {
-    tipo: "San Pedro Sula",
+    tipo: "Carchi",
+  },
+
+  {
+    tipo: "Chimborazo",
+  },
+
+  {
+    tipo: "Cotopaxi",
+  },
+
+  {
+    tipo: "El Oro",
+  },
+
+  {
+    tipo: "Esmeraldas",
+  },
+
+  {
+    tipo: "Galápagos",
+  },
+
+  {
+    tipo: "Guayas",
+  },
+
+  {
+    tipo: "Imbabura",
+  },
+
+  {
+    tipo: "Loja",
+  },
+
+  {
+    tipo: "Los Ríos",
+  },
+
+  {
+    tipo: "Manabí",
+  },
+
+  {
+    tipo: "Morona Santiago",
+  },
+
+  {
+    tipo: "Napo",
+  },
+
+  {
+    tipo: "Orellana",
+  },
+
+  {
+    tipo: "Pastaza",
+  },
+
+  {
+    tipo: "Pichincha",
+  },
+
+  {
+    tipo: "Santa Elena",
+  },
+
+  {
+    tipo: "Santo Domingo de los Tsáchilas",
+  },
+
+  {
+    tipo: "Sucumbíos",
+  },
+
+  {
+    tipo: "Tungurahua",
+  },
+
+  {
+    tipo: "Zamora Chinchipe",
   },
 ];
 
