@@ -1,4 +1,5 @@
 import headerPrev from "../../../images/proteccion-integral-header.png";
+import { LinkEmailHardCoded } from "../../../utils/LinkSending";
 
 const AtlantidaInsuranceProteccionHeader = () => {
   return (
