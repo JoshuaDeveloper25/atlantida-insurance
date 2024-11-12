@@ -51,60 +51,99 @@ export const navbarLinks = [
   },
 
   {
-    to: "#",
-    text: "Productos",
-
     // This is for if it's a dropdown
-    dropdownLinks: [
-      {
-        text: "Vida Individual",
-        to: "/vida-individual",
-      },
-
-      {
-        text: "Salud",
-        to: "/salud-protegida",
-      },
-
-      {
-        text: "Salud Internacional",
-        to: "/protege-salud",
-      },
-
-      {
-        text: "Asistencia en Viajes",
-        to: "/viaja-confianza",
-      },
-
-      {
-        text: "Vehículos",
-        to: "/conduce-seguro",
-      },
-
-      {
-        text: "Gastos Médicos Mayores (Personas)",
-        to: "/gasto-medico",
-      },
-
-      {
-        text: "Accidentes Personales",
-        to: "/proteccion-integral",
-      },
-
-      {
-        text: "Otras coberturas",
-        to: "/amplitud-coberturas",
-      },
-    ],
     isDropdown: true,
-    dropdownTitle: "Productos",
+    isNestedDropdown: true,
+    dropdownTitle: "Ramos",
+    subdropdownOne: {
+      title: "Soluciones para personas",
+      dropdownLinks: [
+        {
+          text: "Vida Individual",
+          to: "/vida-individual",
+        },
+
+        {
+          text: "Salud",
+          to: "/salud-protegida",
+        },
+
+        {
+          text: "Salud Internacional",
+          to: "/protege-salud",
+        },
+
+        {
+          text: "Asistencia en Viajes",
+          to: "/viaja-confianza",
+        },
+
+        {
+          text: "Vehículos",
+          to: "/conduce-seguro",
+        },
+
+        {
+          text: "Gastos Médicos Mayores",
+          to: "/gasto-medico",
+        },
+
+        {
+          text: "Accidentes Personales",
+          to: "/proteccion-integral",
+        },
+
+        {
+          text: "Otras coberturas",
+          to: "/amplitud-coberturas",
+        },
+      ],
+    },
+    subdropdownTwo: {
+      title: "Soluciones para empresas",
+      dropdownLinks: [
+        {
+          text: "Salud para PYMES y Corporativos",
+          to: "/proteccion-personalizada",
+        },
+
+        {
+          text: "Colectiva de Vida",
+          to: "/servicios",
+        },
+
+        {
+          text: "Gastos Médicos Mayores",
+          to: "/respaldo-economico",
+        },
+
+        {
+          text: "Seguros Masivos",
+          to: "/empresa-potencial",
+        },
+
+        {
+          text: "Riesgos Especiales",
+          to: "/imprevisto",
+        },
+
+        {
+          text: "Seguro Agrícola",
+          to: "/cultiva",
+        },
+
+        {
+          text: "Ramos Generales",
+          to: "/ramos-generales",
+        },
+      ],
+    },
   },
 
   {
-    to: "/servicios",
-    text: "Servicios",
-
     // This is for if it's a dropdown
+    isDropdown: true,
+    dropdownTitle: "Servicios",
     dropdownLinks: [
       {
         text: "Salud para PYMES y Corporativos",
@@ -117,7 +156,7 @@ export const navbarLinks = [
       },
 
       {
-        text: "Gastos Médicos Mayores (Empresas)",
+        text: "Gastos Médicos Mayores",
         to: "/respaldo-economico",
       },
 
@@ -141,20 +180,12 @@ export const navbarLinks = [
         to: "/ramos-generales",
       },
     ],
-    isDropdown: true,
-    dropdownTitle: "Servicios",
   },
 
   {
     to: "/recursos",
     text: "Recursos",
   },
-
-  // {
-  //   // to: "/blog",
-  //   to: "#",
-  //   text: "Blog",
-  // },
 
   {
     to: "/contacto",
@@ -352,10 +383,6 @@ export const tipoCobertura = [
     {
       tipo: "Tipo 1",
     },
-
-    {
-      tipo: "Provincia",
-    },
   ],
 
   // --> Cobertura Salud Internacional, Cobertura de Salud, Gastos Médicos Mayores (Personas) [1]
@@ -523,11 +550,13 @@ export const sociosEstrategicos = [
   {
     image: socio1,
     url: "#",
+    imgClassName: "w-24 h-20 object-contain",
   },
 
   {
     image: socio9,
     url: "#",
+    imgClassName: "w-32 h-16 object-contain",
   },
 
   {
@@ -563,11 +592,13 @@ export const sociosEstrategicos = [
   {
     image: socio6,
     url: "#",
+    imgClassName: "w-32 h-16 object-contain",
   },
 
   {
     image: socio5,
     url: "#",
+    imgClassName: "w-32 h-16 object-contain",
   },
 ];
 
@@ -740,7 +771,7 @@ export const tiposDeUso = [
   },
 ];
 
-export const vehiculosDiesel = [
+export const tipoDeVehiculo = [
   {
     tipo: "BMW",
   },

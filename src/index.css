@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 @font-face {
   font-family: "Nunito Sans";
   src: url("./fonts/NunitoSans-Black.ttf") format("truetype");
@@ -93,6 +105,14 @@ body {
   .btn-disabled {
     @apply text-white animate-pulse pointer-events-none font-light rounded-md text-center bg-[#b3b3b3] inline-block animation-fade;
   }
+
+  .navbar-nested-dropdown {
+    @apply w-full gap-0 text-base text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black bg-transparent p-0 !important;
+  }
+
+  .bg-primary {
+    @apply text-white bg-primary-color !important;
+  }
 }
 
 .family-nunito-black {
@@ -177,5 +197,47 @@ body {
 
   .tag-link {
     padding: 0.5rem 1rem;
+  }
+}
+
+.rs-dropdown-item {
+  font-weight: bolder !important;
+  font-family: "Nunito Sans Black";
+  color: white !important;
+}
+
+/* Grab only last child (in this case brother) on hovering a li element */
+.dropdown-link-nav:first-child > li:hover {
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+}
+
+/* Grab only first child (in this case brother) on hovering a li element */
+.dropdown-link-nav:last-child > li:hover {
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
+
+.rs-dropdown-item-submenu.rs-dropdown-item > .rs-dropdown-menu {
+  position: absolute;
+  top: -6px;
+}
+
+/* 640px */
+@media (max-width: 40em) {
+  .rs-dropdown-item-submenu.rs-dropdown-item:first-child .rs-dropdown-menu {
+    top: 2.3rem !important;
+    left: 0;
+  }
+
+  .rs-dropdown-item-submenu.rs-dropdown-item:last-child .rs-dropdown-menu {
+    top: 2.3rem !important;
+    left: 0;
+  }
+
+  .rs-dropdown-item-submenu.rs-dropdown-item
+    > .rs-dropdown-item-toggle
+    .rs-dropdown-menu-toggle-icon {
+    transform: rotate(90deg) !important;
   }
 }

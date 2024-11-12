@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { navbarLinks } from "../../DB/data";
 import { createPortal } from "react-dom";
 import { useState } from "react";
+import NestedNavbarDropdown from "./NestedNavbarDropdown";
 
 const NavbarAtlantidaInsurance = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -26,11 +27,14 @@ const NavbarAtlantidaInsurance = () => {
         <div className="hidden lg:flex items-center gap-8">
           {navbarLinks?.map((navLink, index) => {
             const {
-              to,
-              text,
+              isNestedDropdown = false,
               isDropdown = false,
+              subdropdownOne,
+              subdropdownTwo,
               dropdownLinks,
               dropdownTitle,
+              text,
+              to,
             } = navLink;
 
             return !isDropdown ? (
@@ -46,26 +50,23 @@ const NavbarAtlantidaInsurance = () => {
               >
                 {text}
               </NavLink>
-            ) : (
+            ) : isDropdown && !isNestedDropdown ? (
               <div key={index} className="group relative cursor-pointer">
                 <div className="hover:text-primary-color flex items-center justify-between gap-4">
                   <NavLink
-                    className={
-                      "text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black "
-                    }
-                    to={"#"}
+                    className="text-secondary-color font-extrabold hover:text-primary-color transition-all duration-300 family-nunito-black"
+                    to="#"
                   >
                     {dropdownTitle}
                   </NavLink>
-
-                  <span className="">
+                  <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth="1.5"
                       stroke="currentColor"
-                      className={`h-6 w-6`}
+                      className="h-6 w-6"
                     >
                       <path
                         strokeLinecap="round"
@@ -75,33 +76,40 @@ const NavbarAtlantidaInsurance = () => {
                     </svg>
                   </span>
                 </div>
-
                 <div className="invisible absolute z-[9999] flex w-48 right-0 flex-col rounded-md bg-primary-color py-1 px-4 text-white shadow-xl group-hover:visible">
-                  {dropdownLinks?.map((dropdownLinks, index) => {
-                    const { text, to } = dropdownLinks;
-                    return (
-                      <NavLink
-                        key={index}
-                        className={({ isActive }) =>
-                          isActive
-                            ? "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white/50 shadow-md leading-4"
-                            : "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
-                        }
-                        to={to}
-                      >
-                        {text}
-                      </NavLink>
-                    );
-                  })}
+                  {dropdownLinks?.map((link, idx) => (
+                    <NavLink
+                      key={idx}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white/50 shadow-md leading-4"
+                          : "my-2 block text-sm py-1 family-nunito-black text-[.9rem] font-semibold text-white hover:text-white/50 leading-4"
+                      }
+                      to={link.to}
+                    >
+                      {link.text}
+                    </NavLink>
+                  ))}
                 </div>
               </div>
+            ) : (
+              isDropdown &&
+              isNestedDropdown && (
+                <NestedNavbarDropdown
+                  setNavbarOpen={setNavbarOpen}
+                  subdropdownOne={subdropdownOne}
+                  subdropdownTwo={subdropdownTwo}
+                  dropdownTitle={dropdownTitle}
+                  key={index}
+                />
+              )
             );
           })}
 
           <NavLink
             onClick={() => setNavbarOpen(false)}
             className={"btn-normal button-red-primary"}
-            to={`#`}
+            to={`https://app.softseguros.com/home/#aseguradoras`}
           >
             Mi Seguro
           </NavLink>
@@ -127,7 +135,7 @@ const NavbarAtlantidaInsurance = () => {
             {createPortal(
               <div
                 onClick={() => setNavbarOpen(!navbarOpen)}
-                className={`lg:hidden bg-black/50 h-[100vh] fixed top-0 w-full`}
+                className={`lg:hidden bg-black/50 h-[100vh] fixed inset-y-0 w-full`}
               ></div>,
               document.body
             )}
@@ -136,7 +144,7 @@ const NavbarAtlantidaInsurance = () => {
 
         <div
           id="drawer-example"
-          className={`lg:hidden w-full fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform duration-500 bg-white sm:w-80 ${
+          className={`lg:hidden w-full fixed top-0 left-0 z-40 h-screen p-4 transition-transform duration-500 bg-white sm:w-80 ${
             !navbarOpen ? "-translate-x-full" : null
           }`}
           tabIndex="-1"
@@ -182,11 +190,14 @@ const NavbarAtlantidaInsurance = () => {
           <div className="flex flex-col mt-10 gap-6">
             {navbarLinks?.map((navLink, index) => {
               const {
-                to,
-                text,
+                isNestedDropdown = false,
                 isDropdown = false,
+                subdropdownOne,
+                subdropdownTwo,
                 dropdownLinks,
                 dropdownTitle,
+                text,
+                to,
               } = navLink;
 
               return !isDropdown ? (
@@ -202,7 +213,7 @@ const NavbarAtlantidaInsurance = () => {
                 >
                   {text}
                 </NavLink>
-              ) : (
+              ) : isDropdown && !isNestedDropdown ? (
                 <div key={index} className="group relative cursor-pointer">
                   <div className="hover:text-primary-color flex items-center justify-between gap-4">
                     <NavLink
@@ -252,13 +263,24 @@ const NavbarAtlantidaInsurance = () => {
                     })}
                   </div>
                 </div>
+              ) : (
+                isDropdown &&
+                isNestedDropdown && (
+                  <NestedNavbarDropdown
+                    setNavbarOpen={setNavbarOpen}
+                    subdropdownOne={subdropdownOne}
+                    subdropdownTwo={subdropdownTwo}
+                    dropdownTitle={dropdownTitle}
+                    key={index}
+                  />
+                )
               );
             })}
 
             <NavLink
               onClick={() => setNavbarOpen(false)}
               className={"btn-normal button-red-primary"}
-              to={`#`}
+              to={`https://app.softseguros.com/home/#aseguradoras`}
             >
               Mi Seguro
             </NavLink>

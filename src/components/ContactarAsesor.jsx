@@ -21,7 +21,7 @@ const ContactarAsesor = ({
               <h2 className="text-4xl mb-2">
                 {text} <span className="block mt-2">{textSpanned}</span>
               </h2>
-              <p>Atención 24 horas y 7 días de la semana</p>
+              <p>Atención 24 horas y los 7 días de la semana</p>
             </div>
           </div>
 

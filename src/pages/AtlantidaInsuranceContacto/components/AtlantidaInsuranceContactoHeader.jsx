@@ -54,7 +54,7 @@ const AtlantidaInsuranceContactoHeader = () => {
                   inputProp={{
                     required: true,
                     name: "phone",
-                    type: "text",
+                    type: "number",
                     placeholder: "Teléfono",
                   }}
                 />
@@ -119,7 +119,7 @@ const AtlantidaInsuranceContactoHeader = () => {
             <ul className="text-secondary-color">
               <li>La Floresta</li>
               <li> Andalucía 324 y Francisco Galavis</li>
-              <li> Edificio Atlántida</li>
+              <li> Edificio Sur Atlántida</li>
               <li> P.O.Box 170525</li>
               <li>+593 9 9954 7788</li>
             </ul>
@@ -132,8 +132,8 @@ const AtlantidaInsuranceContactoHeader = () => {
             <ul className="text-secondary-color">
               <li>Kennedy Norte, Av. Francisco de</li>
               <li>Orellana, Mz. 111 - Solar 1</li>
-              <li> Edificio World Trade Center, Torre A,is</li>
-              <li> Piso 10, Oficina 1002</li>
+              <li> Edificio World Trade Center, Torre A,</li>
+              <li> Oficina 1002</li>
               <li> P.O.Box 090112</li>
               <li>+593 9 8537 6977</li>
             </ul>

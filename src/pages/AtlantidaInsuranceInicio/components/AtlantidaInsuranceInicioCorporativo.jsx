@@ -15,8 +15,8 @@ const AtlantidaInsuranceInicioCorporativo = () => {
             />
           </article>
 
-          <article className="text-secondary-color md:py-10 py-2">
-            <div className="flex items-center gap-6 ms-16">
+          <article className="text-secondary-color md:py-10 py-2 md:ms-36">
+            <div className="flex items-center gap-6">
               <img
                 className="w-24"
                 decoding="async"

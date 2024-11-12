@@ -60,7 +60,11 @@ export default function SociosEstrategicosCarousel() {
                 loading="lazy"
                 decoding="async"
                 src={socioEstraategico?.image}
-                className="w-32 h-20 max-[450px]:mx-auto mx-0 object-contain flex justify-center items-center"
+                className={`${
+                  socioEstraategico?.imgClassName
+                    ? socioEstraategico?.imgClassName
+                    : "w-32 h-20 object-contain"
+                } max-[450px]:mx-auto mx-0 flex justify-center items-center`}
               />
             </Link>
           </div>

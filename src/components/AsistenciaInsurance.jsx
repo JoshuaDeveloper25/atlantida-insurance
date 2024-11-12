@@ -1,4 +1,4 @@
-import { ciudadResidencia, vehiculosDiesel } from "../../DB/data";
+import { ciudadResidencia, tipoDeVehiculo } from "../../DB/data";
 import iconSupport from "../images/user-support.png";
 import { InputForm, SelectForm } from "../utils/FormUtilities";
 import { FaMinus, FaPlus } from "react-icons/fa";
@@ -11,6 +11,7 @@ const AsistenciaInsurance = ({
   templateVersionForm = "",
   versionCoverageType,
   coverageType = true,
+  defaultValueAvailable = true,
 }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [numberValue, setNumberValue] = useState(0);
@@ -26,7 +27,7 @@ const AsistenciaInsurance = ({
             src={iconSupport}
           />
           <p className="text-center max-w-[8.5rem] mx-auto mt-6">
-            Atención 24 horas y 7 días de la semana
+            Atención 24 horas y los 7 días de la semana
           </p>
         </article>
 
@@ -108,7 +109,12 @@ const AsistenciaInsurance = ({
                 <div className="sm:w-auto w-full flex-1">
                   <SelectForm
                     selectProp={{ name: "coverage_type", required: true }}
-                    defaultValue={"Tipo de cobertura"}
+                    defaultValue={
+                      defaultValueAvailable
+                        ? "Tipo de cobertura"
+                        : defaultValueAvailable
+                    }
+                    defaultValueAvailable={defaultValueAvailable}
                     options={versionCoverageType}
                   />
                 </div>
@@ -214,8 +220,8 @@ const AsistenciaInsurance = ({
                   <div className="sm:w-auto w-full flex-1">
                     <SelectForm
                       selectProp={{ name: "diesel_cars", required: true }}
-                      defaultValue={"Vehículos de diésel"}
-                      options={vehiculosDiesel}
+                      defaultValue={"Seleccione tipo de vehículo"}
+                      options={tipoDeVehiculo}
                     />
                   </div>
 

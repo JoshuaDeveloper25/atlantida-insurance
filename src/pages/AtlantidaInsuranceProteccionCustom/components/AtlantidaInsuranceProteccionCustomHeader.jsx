@@ -8,7 +8,7 @@ const AtlantidaInsuranceProteccionCustomHeader = () => {
         <article className="text-secondary-color lg:py-0 py-8">
           <h1 className="text-4xl sm:text-5xl leading-10 md:mb-8 mb-0">
             Protección
-            <span className="sm:block inline font-[700]">
+            <span className="block font-[700]">
               personalizada
             </span>{" "}
           </h1>
