@@ -1,9 +1,9 @@
 import { ciudadResidencia, tipoDeVehiculo } from "../../DB/data";
-import iconSupport from "../images/user-support.png";
 import { InputForm, SelectForm } from "../utils/FormUtilities";
+import iconSupport from "../images/user-support.png";
 import { FaMinus, FaPlus } from "react-icons/fa";
-import { useState } from "react";
 import Formulario from "./Formulario";
+import { useState } from "react";
 
 const AsistenciaInsurance = ({
   iconClassnames,
