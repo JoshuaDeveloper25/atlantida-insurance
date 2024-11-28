@@ -6,6 +6,7 @@ import MasInformacion from "../../components/MasInformacion";
 import subfooter from "../../images/subfooter31.jpeg";
 import SubFooter from "../../components/SubFooter";
 import RedBanner from "../../components/RedBanner";
+import { tipoCobertura } from "../../../DB/data";
 
 const AtlantidaInsuranceAbout = () => {
   return (
@@ -26,7 +27,7 @@ const AtlantidaInsuranceAbout = () => {
       <AtlantidaInsuranceAboutValores />
 
       {/* Más información */}
-      <MasInformacion versionCoverageType={null} />
+      <MasInformacion versionCoverageType={tipoCobertura[1]} />
 
       {/* Subfooter 31 */}
       <SubFooter

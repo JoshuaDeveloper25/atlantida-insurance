@@ -65,7 +65,8 @@ const MasInformacion = ({ versionCoverageType }) => {
 
                   <SelectForm
                     selectProp={{ name: "residence_city", required: true }}
-                    defaultValue={"Ciudad de residencia"}
+                    // defaultValue={"Ciudad de residencia"}
+                    defaultValue={"Provincia"}
                     options={ciudadResidencia}
                   />
                 </div>
